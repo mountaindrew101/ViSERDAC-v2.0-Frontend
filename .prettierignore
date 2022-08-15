@@ -1,0 +1,10 @@
+yarn.lock/
+.cache/
+node_modules/
+public/
+gatsby-browser.js/
+gatsby-config.js/
+package.json/
+postcss.config.js/
+README.md/
+tailwind.config.js/
