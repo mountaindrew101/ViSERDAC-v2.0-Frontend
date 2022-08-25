@@ -1,11 +1,8 @@
 import React from "react";
+import { Layout } from "../components/layout";
 
 const Home = () => {
-  return (
-    <div>
-      <div>Hello</div>
-    </div>
-  );
+  return <Layout>CONTENT</Layout>;
 };
 
 export default Home;
