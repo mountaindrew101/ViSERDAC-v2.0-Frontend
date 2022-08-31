@@ -35,3 +35,32 @@ export const headerLogoDesktopStyle = cntl`
     hover:-translate-x-1
     hover:translate-y-1
     h-[5rem] w-[16rem]`;
+
+export const backToTopContainerStyle ={
+    Invisible: cntl`
+        fixed
+        
+        invisible opacity-0 scale-0
+        origin-right
+        transition-all duration-500 ease-in-out`,
+    Visible: cntl`
+        fixed
+        
+        visible opacity-100 scale-100
+        origin-left
+        transition-all duration-500 ease-in-out`
+    };
+
+export const backToTopTextStyles = {
+    Invisible: cntl`
+        rotate-90 -translate-x-4
+        text-white opacity-0
+        transition duration-300 ease-in-out pointer-events-none`,
+    Visible: cntl`
+        rotate-90 translate-y-12 -translate-x-4
+        text-[#003D00]
+        group-hover:translate-y-[-3rem] group-hover:opacity-0 group-hover:text-white
+        transition duration-300 ease-in-out pointer-events-none`
+}
+
+    

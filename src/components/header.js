@@ -6,13 +6,22 @@ import {
   headerSubContainerStyle,
   yellowBarStyle,
   headerLogoDesktopStyle,
+  backToTopContainerStyle,
+  backToTopTextStyles,
 } from "./styles/headerStyles";
 import { motion } from "framer-motion";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import ViSERDACLogo from "./assets/ViSERDAC-Logo-Landscape.inline.svg";
 import { BackToTop } from "./backToTop";
+import useOnScreen from "./hooks/useOnScreenHook";
+import { useRef } from "react";
 
 export const Header = () => {
+
+  const ref = useRef();
+  const isVisible = useOnScreen(ref)
+  
+
   return (
     <motion.div
       initial={{
@@ -31,7 +40,7 @@ export const Header = () => {
     >
       <header className={headerContainerStyle} id="headerContainer">
         <div className={yellowBarStyle} id="yellowBar"></div>
-        <div className={headerSubContainerStyle} id="headerSubContainer">
+        <div className={headerSubContainerStyle} id="headerSubContainer" ref={ref}>
           <AniLink
             hex="#003D00"
             paintDrip
@@ -45,8 +54,13 @@ export const Header = () => {
           <NavBar />
         </div>
       </header>
-      <div className="sticky">
-        <BackToTop />
+
+      <div className="flex w-screen justify-end items-end pr-10">
+        
+      <div id="backToTopContainer" className={isVisible ? backToTopContainerStyle.Invisible : backToTopContainerStyle.Visible}>
+        <BackToTop backToTopTextStyle={isVisible ? backToTopTextStyles.Invisible : backToTopTextStyles.Visible} />
+        
+      </div>
       </div>
     </motion.div>
   );

@@ -1,15 +1,20 @@
 import React from "react";
 import { ArrowUp } from "./assets/arrowUpSVG";
+import { backToTopStyles } from "./styles/layoutStyles";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
-export const BackToTop = () => {
+export const BackToTop = ({ backToTopTextStyle }) => {
   return (
+    <div className="group">
     <div
-      className="w-14 h-14 bg-[#FDCB00] rounded-full flex justify-center items-center translate-y-[0.12rem] drop-shadow-thicknear"
+      className={`${backToTopStyles.backToTopParent} + ${backToTopStyles.backToTopParentHover}`}
       id="back-to-top"
     >
-      <div className="w-14 h-14 bg-[#003D00] rounded-full flex justify-center items-center translate-y-[-0.12rem]">
-        <ArrowUp ArrowUpClass="h-8 w-8" />
-      </div>
+      <button onClick={() => scrollTo('#headerContainer')} className={`${backToTopStyles.backtoTopSubParent} + ${backToTopStyles.backToTopSubParentHover}`}>
+        <ArrowUp ArrowUpClass={backToTopStyles.backToTopArrowStyle} />
+      </button>
+    </div>
+    <div className={backToTopTextStyle}>Back to top</div>
     </div>
   );
 };

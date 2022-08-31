@@ -53,6 +53,7 @@ export const AboutUsDesktop = () => {
             >
               {aboutUsDropdownList.map((list) => (
                 <Link
+                  key={list.title}
                   id="aboutUsListItem"
                   to={list.link}
                   className={navDropdownMapStyle}
