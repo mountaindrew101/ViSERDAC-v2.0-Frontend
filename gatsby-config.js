@@ -1,6 +1,10 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    title: `Front-end`,
+    title: `ViSERDAC`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -8,6 +12,8 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: "gatsby-source-filesystem",
       options: {

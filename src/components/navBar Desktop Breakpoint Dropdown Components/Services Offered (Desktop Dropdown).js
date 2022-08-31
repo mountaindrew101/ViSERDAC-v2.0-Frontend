@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import {
   ArrowNavStyle,
   groupController,
@@ -30,10 +30,10 @@ export const ServicesOfferedDesktopDropdown = () => {
     >
       <motion.div initial="rest" whileHover="hover" animate="rest">
         <li className={groupController}>
-          <Link to="/" className={`${navListItemStyle}`}>
+          <AniLink paintDrip to="/" className={`${navListItemStyle}`}>
             Services Offered
             <ArrowNav ArrowClasses={ArrowNavStyle} />
-          </Link>
+          </AniLink>
           <motion.span
             variants={hoverExpand}
             className={`w-36 ${listItemGreenBarStyle}`}
@@ -48,9 +48,14 @@ export const ServicesOfferedDesktopDropdown = () => {
               id="ServicesOfferedDropdownSubContainer"
             >
               {servicesOfferedDropdownList.map((list) => (
-                <Link to={list.link} className={navDropdownMapStyle}>
+                <AniLink
+                  hex="#003D00"
+                  paintDrip
+                  to={list.link}
+                  className={navDropdownMapStyle}
+                >
                   {list.title}
-                </Link>
+                </AniLink>
               ))}
             </div>
           </div>

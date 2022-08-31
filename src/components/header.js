@@ -8,8 +8,9 @@ import {
   headerLogoDesktopStyle,
 } from "./styles/headerStyles";
 import { motion } from "framer-motion";
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import ViSERDACLogo from "./assets/ViSERDAC-Logo-Landscape.inline.svg";
+import { BackToTop } from "./backToTop";
 
 export const Header = () => {
   return (
@@ -31,13 +32,22 @@ export const Header = () => {
       <header className={headerContainerStyle} id="headerContainer">
         <div className={yellowBarStyle} id="yellowBar"></div>
         <div className={headerSubContainerStyle} id="headerSubContainer">
-          <Link to="/" className={headerLogoDesktopStyle} id="ViSERDAC Logo">
+          <AniLink
+            hex="#003D00"
+            paintDrip
+            to="/"
+            className={headerLogoDesktopStyle}
+            id="ViSERDAC Logo"
+          >
             <ViSERDACLogo />
-          </Link>
+          </AniLink>
           <div className={gapControllerStyle} id="gapController"></div>
           <NavBar />
         </div>
       </header>
+      <div className="sticky">
+        <BackToTop />
+      </div>
     </motion.div>
   );
 };
