@@ -1,54 +1,33 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+  <div>
+    <img alt="ViSERDAC" src="./src/images/ViSERDAC-Logo.png" />
+  </div>
 </p>
-<h1 align="center">
-  Gatsby minimal starter
+<h1 style='color:#37932F' align="center">
+  <strong>ViSERDAC
 </h1>
 
-## 🚀 Quick start
+#### ViSERDAC is established to serve as a repository of socio-economic and demographic data in the Visayas.
 
-1.  **Create a Gatsby site.**
+---
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## <span style='color:#FFCB52'>**Contributing** <span> 🧑‍💻
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+1. Make sure you have <span style='color:#26abff'> _yarn_ </span> installed
 
-2.  **Start developing.**
+   `npm install --global yarn`
 
-    Navigate into your new site’s directory and start it up.
+2. Create a new folder to be used as your <span style='color:#26abff'> _yarn_ </span> workspace
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+   `mkdir ViSERDAC-workspace`
 
-3.  **Open the code and start customizing!**
+3. Inside your workspace folder, clone this repo.
 
-    Your site is now running at http://localhost:8000!
+4. `cd` into this repo and run `yarn` (to download all dependencies) . Leave this terminal window open.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+5. In your terminal run `yarn develop` to view the project in your browser.
+   [http://localhost:8000/](http:localhost:8000/)
 
-4.  **Learn more**
+6. Now make changes to the front-end src folder, they will reflect on your project.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+#### Feature requests and PR’s are welcome! If you’re having a problem please leave an issue and I’ll help you out asap.

@@ -17,10 +17,8 @@ import useOnScreen from "./hooks/useOnScreenHook";
 import { useRef } from "react";
 
 export const Header = () => {
-
   const ref = useRef();
-  const isVisible = useOnScreen(ref)
-  
+  const isVisible = useOnScreen(ref);
 
   return (
     <motion.div
@@ -40,7 +38,11 @@ export const Header = () => {
     >
       <header className={headerContainerStyle} id="headerContainer">
         <div className={yellowBarStyle} id="yellowBar"></div>
-        <div className={headerSubContainerStyle} id="headerSubContainer" ref={ref}>
+        <div
+          className={headerSubContainerStyle}
+          id="headerSubContainer"
+          ref={ref}
+        >
           <AniLink
             hex="#003D00"
             paintDrip
@@ -56,11 +58,22 @@ export const Header = () => {
       </header>
 
       <div className="flex w-screen justify-end items-end pr-10">
-        
-      <div id="backToTopContainer" className={isVisible ? backToTopContainerStyle.Invisible : backToTopContainerStyle.Visible}>
-        <BackToTop backToTopTextStyle={isVisible ? backToTopTextStyles.Invisible : backToTopTextStyles.Visible} />
-        
-      </div>
+        <div
+          id="backToTopContainer"
+          className={
+            isVisible
+              ? backToTopContainerStyle.Invisible
+              : backToTopContainerStyle.Visible
+          }
+        >
+          <BackToTop
+            backToTopTextStyle={
+              isVisible
+                ? backToTopTextStyles.Invisible
+                : backToTopTextStyles.Visible
+            }
+          />
+        </div>
       </div>
     </motion.div>
   );
