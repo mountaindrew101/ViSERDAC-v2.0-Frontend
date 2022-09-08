@@ -1,6 +1,6 @@
 <p align="center">
-  <div>
-    <img alt="ViSERDAC" src="./src/images/ViSERDAC-Logo.png" />
+  <div align='center'>
+    <img style='width: 180px' alt="ViSERDAC" src="./src/images/ViSERDAC-Logo.png" />
   </div>
 </p>
 <h1 style='color:#37932F' align="center">
