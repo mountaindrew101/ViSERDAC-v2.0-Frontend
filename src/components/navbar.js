@@ -4,11 +4,11 @@ import { ContactUsDesktop } from "./navBar Desktop Breakpoint Dropdown Component
 import { DatasetsDesktop } from "./navBar Desktop Breakpoint Dropdown Components/Datasets (Desktop)";
 import { PublicationDesktop } from "./navBar Desktop Breakpoint Dropdown Components/Publication (Desktop)";
 import { ServicesOfferedDesktopDropdown } from "./navBar Desktop Breakpoint Dropdown Components/Services Offered (Desktop Dropdown)";
-import { navBarListStyle } from "./styles/navbarStyles";
+import { navBarListStyle, navBarStyle } from "./styles/navbarStyles";
 
 export const NavBar = () => {
   return (
-    <nav>
+    <nav className={navBarStyle}>
       <ul className={navBarListStyle} id="navListContainerDesktop">
         <ServicesOfferedDesktopDropdown />
         <DatasetsDesktop />

@@ -21,6 +21,8 @@ export const hoverExpand = {
   },
 };
 
+export const navBarStyle = cntl`z-50`;
+
 export const navBarListStyle = cntl`
     flex
     text-[0.95rem] space-x-4`;

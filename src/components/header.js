@@ -1,5 +1,7 @@
 import React from "react";
+import { useRef } from "react";
 import { NavBar } from "./navbar";
+
 import {
   headerContainerStyle,
   gapControllerStyle,
@@ -9,12 +11,14 @@ import {
   backToTopContainerStyle,
   backToTopTextStyles,
 } from "./styles/headerStyles";
+
 import { motion } from "framer-motion";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 import ViSERDACLogo from "./assets/ViSERDAC-Logo-Landscape.inline.svg";
 import { BackToTop } from "./backToTop";
+
 import useOnScreen from "./hooks/useOnScreenHook";
-import { useRef } from "react";
 
 export const Header = () => {
   const ref = useRef();
