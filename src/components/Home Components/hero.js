@@ -1,4 +1,4 @@
-// * Note: empty strings are included in the className concatenations for the styles to work
+// ! warn: empty strings should be included in between className concatenations for the styles to work
 
 import React from "react";
 import scrollTo from "gatsby-plugin-smoothscroll";
@@ -61,7 +61,7 @@ export const Hero = () => {
             demographic data in the Visayas.{" "}
           </h2>
           <button
-            onClick={() => scrollTo("#HomeBody")}
+            onClick={() => scrollTo("#HomeSectionTwoContainer")}
             className={
               HeroStyles.LearnMoreButton +
               " " +
