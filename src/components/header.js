@@ -10,6 +10,7 @@ import {
   headerLogoDesktopStyle,
   backToTopContainerStyle,
   backToTopTextStyles,
+  backToTopParentContainerStyle,
 } from "./styles/headerStyles";
 
 import { motion } from "framer-motion";
@@ -61,7 +62,7 @@ export const Header = () => {
         </div>
       </header>
 
-      <div className="flex w-screen justify-end items-end pr-10">
+      <div className={backToTopParentContainerStyle}>
         <div
           id="backToTopContainer"
           className={

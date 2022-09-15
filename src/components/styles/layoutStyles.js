@@ -9,29 +9,29 @@ export const layoutContainerStyle = cntl`
     `;
 
 export const backToTopStyles = {
-    backToTopParent: cntl`
+  backToTopParent: cntl`
         w-14 h-14
         bg-[#FDCB00] rounded-full
         flex justify-center items-center
         translate-y-[0.12rem] drop-shadow-thicknear
         transition duration-500 ease-in-out`,
-    backtoTopSubParent: cntl`
+  backtoTopSubParent: cntl`
         w-14 h-14
         bg-[#003D00] rounded-full
         flex justify-center items-center
         translate-y-[-0.12rem]
         transition duration-500 ease-in-out`,
-            // HOVER
-    backToTopParentHover: cntl`
+  // HOVER
+  backToTopParentHover: cntl`
         group
-        hover:bg-[#003D00]`,
-    backToTopSubParentHover: cntl`
+        hover:bg-[#003D00] hover:scale-125`,
+  backToTopSubParentHover: cntl`
         group-hover:bg-white`,
 
-    // Arrow Styles
-    backToTopArrowStyle: cntl`
+  // Arrow Styles
+  backToTopArrowStyle: cntl`
         h-8 w-8
         group-hover:stroke-[#003D00]
         group-hover:translate-y-[-0.15rem]
-        transition duration-500 ease-in-out`
-}
+        transition duration-500 ease-in-out`,
+};
