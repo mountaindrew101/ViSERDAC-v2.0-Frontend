@@ -1,11 +1,24 @@
 import cntl from "cntl";
 
 export const homeSectionTwoContainerStyles = {
-  MainContainer: cntl``,
+  MainContainer: cntl`
+		overflow-hidden
+  		w-screen
+  		bg-gradient-to-b
+		from-[#fff]
+		via-[#F7D859]
+		to-[#fff]
+		p-20
+		flex
+		items-center justify-center`,
   MainContainerBreakpointStyles: cntl``,
 
-  SubContainer: cntl``,
-  SubContainerBreakpointStyles: cntl``,
+  SubContainer: cntl`
+  		flex flex-col`,
+  SubContainerBreakpointStyles: cntl`
+  		lg:items-center
+		lg:justify-center
+		lg:space-y-3`,
 };
 
 export const WeSpecializeStyles = {
@@ -127,8 +140,72 @@ export const GetOpenAccessStyles = {
 
         min-xl:hover:bg-white 
         min-xl:hover:-translate-y-1 
-         min-xl:hover:shadow-xl
-         min-xl:hover:scale-105`,
+        min-xl:hover:shadow-xl
+        min-xl:hover:scale-105`,
 };
 
-export const ProvideTechnicalAssistance = {};
+export const ProvideTechnicalAssistanceStyles = {
+  MainContainer: cntl`
+        group
+        mt-[-4.3rem]
+        ml-10 z-20
+        `,
+  MainContainerBreakpointStyles: cntl`
+  		lg:mt-0
+  		lg:ml-0
+
+  		min-xl:hover:z-40`,
+
+  ContentContainer: cntl`
+  		transition duration-300 ease-in-out
+		w-[745px] h-[250px]
+		bg-[#003D00]
+		rounded-[36px]
+		shadow-xl
+		flex flex-col items-center justify-center`,
+  ContentContainerBreakpointStyles: cntl`
+		lg:w-[600px]
+		md:h-[200px]
+		md:w-[500px]
+		sm:h-[260px]
+		sm:w-[400px]
+		xs:h-[200px]
+		xs:w-[300px]
+		min-xl:group-hover:scale-105`,
+
+  Content_h3: cntl`
+		text-5xl font-bold text-[#DCE775]
+		self-start
+		ml-10`,
+  Content_h3BreakpointStyles: cntl`
+  		lg:pr-5
+		lg:text-4xl
+		md:text-[2.1rem]
+		xs:ml-8
+		xs:leading-6
+		xs:text-[1.5rem]`,
+
+  Button: cntl`
+		transition duration-300 ease-in-out
+		bg-[#FDCB00]
+		ml-12 mt-4
+		p-3 pr-8 pl-8
+		rounded-[50px]
+		flex flex-row
+		self-start
+		
+		active:bg-[#FDCB00]
+		`,
+  ButtonBreakpointStyles: cntl`
+  		xs:ml-8
+  		xs:text-[0.7rem]
+  		xs:p-1
+  		xs:pr-4
+  		xs:pl-4
+  		lg:text-sm
+
+		min-xl:hover:scale-105
+		min-xl:hover:-translate-y-1
+		min-xl:hover:shadow-xl
+		min-xl:hover:bg-white`,
+};

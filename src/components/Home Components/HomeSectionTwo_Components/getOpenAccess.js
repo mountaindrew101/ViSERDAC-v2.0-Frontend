@@ -1,3 +1,5 @@
+// ! warn: empty strings should be included in between className concatenations for the styles to work
+
 import { motion } from "framer-motion";
 import React from "react";
 import { GetOpenAccessStyles } from "../../styles/homeSectionTwoStyles";
