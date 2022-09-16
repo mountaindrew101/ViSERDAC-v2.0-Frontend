@@ -1,11 +1,11 @@
 import cntl from "cntl";
 
 export const FooterStyles = {
-  MainContainer: cntl``,
+  MainContainer: cntl` flex flex-col items-center`,
   MainContainerBreakpointStyles: cntl``,
 
   FooterDividingLine: cntl`
-        h-1 w-20 bg-black`,
+        h-[0.10rem] w-[70vw] bg-black`,
   FooterDividingLineBreakpointStyles: cntl``,
 
   SectionOneContainer: cntl`
