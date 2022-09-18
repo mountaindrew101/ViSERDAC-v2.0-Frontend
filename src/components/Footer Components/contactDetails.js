@@ -2,7 +2,11 @@
 
 import React from "react";
 
-import { FooterStyles } from "../styles/footerStyle";
+import {
+  FooterStyles,
+  FooterContactDetails,
+  FooterLinks,
+} from "../styles/footerStyle";
 
 import LocationSVG from "./Location.inline.svg";
 import LottieCallAnimation from "../lottie/LottieCallAnimation";
@@ -18,9 +22,31 @@ export const ContactDetails = () => {
         FooterStyles.ContactDetailsContainerBreakpointStyles
       }
     >
-      <div id="Contact">
-        <span>Contact</span>
-        <div id="Address">
+      <div
+        id="Contact"
+        className={
+          FooterContactDetails.Container +
+          " " +
+          FooterContactDetails.ContainerBreakpointStyles
+        }
+      >
+        <div
+          className={
+            FooterContactDetails.Contact +
+            " " +
+            FooterContactDetails.ContactBreakpointStyles
+          }
+        >
+          Contact
+        </div>
+        <div
+          id="Address"
+          className={
+            FooterContactDetails.Address +
+            " " +
+            FooterContactDetails.AddressBreakpointStyles
+          }
+        >
           <LocationSVG />
           <span>
             <strong>
@@ -31,16 +57,82 @@ export const ContactDetails = () => {
             Visca, Baybay City, Leyte, 6521, Philippines
           </span>
         </div>
-        <div id="Landline">
+        <div
+          id="Landline"
+          className={
+            FooterContactDetails.Landline +
+            " " +
+            FooterContactDetails.LandlineBreakpointStyles
+          }
+        >
           <LottieCallAnimation />
-          <span>(053) 563 – 7751</span>
+          <span className={FooterContactDetails.LandlineText}>
+            (053) 563 – 7751
+          </span>
         </div>
-        <div id="Email">
+        <div
+          id="Email"
+          className={
+            FooterContactDetails.Email +
+            " " +
+            FooterContactDetails.EmailBreakpointStyles
+          }
+        >
           <LottieMailAnimation />
-          <a href="mailto:viserdac@vsu.edu.ph">viserdac@vsu.edu.ph</a>
+          <a
+            href="mailto:viserdac@vsu.edu.ph"
+            className={FooterContactDetails.EmailText}
+          >
+            viserdac@vsu.edu.ph
+          </a>
         </div>
       </div>
-      <div id="ContactMap"></div>
+      <div
+        id="Links"
+        className={
+          FooterLinks.Container + " " + FooterLinks.UsefulLinksBreakpointStyles
+        }
+      >
+        <span
+          className={
+            FooterLinks.UsefulLinks +
+            " " +
+            FooterLinks.UsefulLinksBreakpointStyles
+          }
+        >
+          Useful Links
+        </span>
+        <ul>
+          <li
+            className={
+              FooterLinks.Links + " " + FooterLinks.LinksBreakpointStyles
+            }
+          >
+            <a href="/">Visayas State University</a>
+          </li>
+          <li
+            className={
+              FooterLinks.Links + " " + FooterLinks.LinksBreakpointStyles
+            }
+          >
+            <a href="/">University of South Eastern Philippines</a>
+          </li>
+          <li
+            className={
+              FooterLinks.Links + " " + FooterLinks.LinksBreakpointStyles
+            }
+          >
+            <a href="/">Central Luzon State University</a>
+          </li>
+          <li
+            className={
+              FooterLinks.Links + " " + FooterLinks.LinksBreakpointStyles
+            }
+          >
+            <a href="/">DOST-PCAARRD</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
