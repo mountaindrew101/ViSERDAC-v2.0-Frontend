@@ -7,6 +7,7 @@ import { ProvideTechnicalAssistanceStyles } from "../../styles/homeSectionTwoSty
 const ProvideTechnicalAssistance = () => {
   return (
     <motion.div
+      id="ProvideTechnicalAssistance"
       initial={{ x: "-100px", rotate: -10, opacity: 0 }}
       whileInView={{ x: 0, rotate: 0, opacity: 1 }}
       transition={{

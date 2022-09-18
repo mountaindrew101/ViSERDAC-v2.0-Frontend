@@ -18,6 +18,7 @@ export const HomeSectionTwo = () => {
       id="HomeSectionTwoContainer"
     >
       <div
+        id="HomeSectionTwoContent"
         className={
           homeSectionTwoContainerStyles.SubContainer +
           " " +

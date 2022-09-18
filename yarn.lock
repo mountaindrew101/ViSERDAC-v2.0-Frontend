@@ -6010,6 +6010,13 @@ gatsby-plugin-image@^2.21.0:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.8.1"
 
+gatsby-plugin-mailgo@^0.12.2:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mailgo/-/gatsby-plugin-mailgo-0.12.2.tgz#9c7077af135ca02360ecc0fcbbe7b6b1e24ad4de"
+  integrity sha512-H67golEBSo//s1EoerNovKYTs1A2vO7b0mC8RX4T/BgfycIzmvv6l35YnGkpqRx6eqYkt5xfmJZPYnr2W035+A==
+  dependencies:
+    mailgo "0.12.2"
+
 gatsby-plugin-page-creator@^4.20.0:
   version "4.20.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.20.0.tgz#b85a5d50028304b377e9d6b4b88d152b35d907e2"
@@ -7971,6 +7978,18 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+lottie-react@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/lottie-react/-/lottie-react-2.3.1.tgz#697060417bab027edb57ed45bda9d62e920d4040"
+  integrity sha512-8cxd6XZZtECT6LoAhCftRdYrEpHxiouvB5EPiYA+TtCG5LHNYAdMS9IVIHcxKtWnpo7x16QfCLj1XLXZpaN81A==
+  dependencies:
+    lottie-web "^5.9.4"
+
+lottie-web@^5.9.4:
+  version "5.9.6"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.9.6.tgz#62ae68563355d3e04aa75d53dec3dd4bea0e57c9"
+  integrity sha512-JFs7KsHwflugH5qIXBpB4905yC1Sub2MZWtl/elvO/QC6qj1ApqbUZJyjzJseJUtVpgiDaXQLjBlIJGS7UUUXA==
+
 lower-case-first@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/lower-case-first/-/lower-case-first-2.0.2.tgz#64c2324a2250bf7c37c5901e76a5b5309301160b"
@@ -8024,6 +8043,11 @@ lru-queue@^0.1.0:
   integrity sha512-BpdYkt9EvGl8OfWHDQPISVpcl5xZthb+XPsbELj5AQXxIC8IriDZIQYjBJPEm5rS420sjZ0TLEzRcq5KdBhYrQ==
   dependencies:
     es5-ext "~0.10.2"
+
+mailgo@0.12.2:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/mailgo/-/mailgo-0.12.2.tgz#b5373c027e475c933dbeabee6e2a71c516608428"
+  integrity sha512-iX4F3eOhPJ+12YlM51UNV8yTYwxHywaGP1C9Qaep/iNP2ZS+xzqHR7U3o+7HoCL19gZKysc7+MwgBEiRy8ogzA==
 
 make-dir@^3.0.0, make-dir@^3.0.2, make-dir@^3.1.0:
   version "3.1.0"

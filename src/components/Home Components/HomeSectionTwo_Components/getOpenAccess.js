@@ -7,6 +7,7 @@ import { GetOpenAccessStyles } from "../../styles/homeSectionTwoStyles";
 const GetOpenAccess = () => {
   return (
     <motion.div
+      id="GetOpenAccess"
       initial={{ x: "100px", rotate: 10, opacity: 0 }}
       whileInView={{ x: 0, rotate: 0, opacity: 1 }}
       transition={{
