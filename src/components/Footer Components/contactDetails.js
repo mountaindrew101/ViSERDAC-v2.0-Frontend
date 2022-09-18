@@ -1,6 +1,6 @@
 // ! warn: empty strings should be included in between className concatenations for the styles to work
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import {
   FooterStyles,
@@ -13,6 +13,28 @@ import LottieCallAnimation from "../lottie/LottieCallAnimation";
 import LottieMailAnimation from "../lottie/LottieMailAnimation";
 
 export const ContactDetails = () => {
+  const CopyText = () => {
+    navigator.clipboard.writeText("(053) 563 - 7751");
+    console.log("Copied Text");
+  };
+  const [Copied, ShowCopied] = useState(false);
+  const ToggleCopy = () => {
+    ShowCopied(true);
+    console.log(Copied);
+  };
+  const CopyFunctions = () => {
+    CopyText();
+    ToggleCopy();
+  };
+
+  useEffect(() => {
+    const DisableCopiedPopUp = setTimeout(() => {
+      ShowCopied(false);
+      console.log('unmounted "Copied to Clipboard"');
+    }, 3000);
+    return () => clearTimeout(DisableCopiedPopUp);
+  });
+
   return (
     <div
       id="ContactDetailsContainer"
@@ -66,9 +88,26 @@ export const ContactDetails = () => {
           }
         >
           <LottieCallAnimation />
-          <span className={FooterContactDetails.LandlineText}>
+          <span
+            role="presentation"
+            onKeyDown={CopyFunctions}
+            onClick={CopyFunctions}
+            className={FooterContactDetails.LandlineText}
+          >
             (053) 563 – 7751
           </span>
+          <div
+            id="Copied to Clipboard"
+            className={
+              Copied
+                ? FooterContactDetails.CopiedVisible
+                : FooterContactDetails.CopiedInvisible
+            }
+          >
+            <div className={FooterContactDetails.CopiedToClipboard}>
+              Copied to Clipboard
+            </div>
+          </div>
         </div>
         <div
           id="Email"

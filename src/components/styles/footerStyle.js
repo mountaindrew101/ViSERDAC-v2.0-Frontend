@@ -82,11 +82,14 @@ export const FooterContactDetails = {
 		hover:translate-x-2
 		hover:underline`,
 
-  CopiedVisible: cntl``,
-  CopiedVisibleBreakpointStyles: cntl``,
+  CopiedToClipboard: cntl`
+  		rounded-3xl mt-2 ml-2 mb-5 p-2 pl-3 pr-3 text-[#228B22] text-sm bg-gray-100`,
 
-  CopiedInvisible: cntl``,
-  CopiedInvisibleBreakpointStyles: cntl``,
+  CopiedVisible: cntl`
+  		transition duration-500 ease-in-out translate-y-0 opacity-100`,
+
+  CopiedInvisible: cntl`
+  		transition duration-500 ease-in-out translate-y-3 opacity-0`,
 };
 
 export const FooterLinks = {
