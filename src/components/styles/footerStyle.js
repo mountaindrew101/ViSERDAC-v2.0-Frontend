@@ -5,11 +5,14 @@ export const FooterStyles = {
   MainContainerBreakpointStyles: cntl``,
 
   FooterDividingLine: cntl`
-        h-[0.10rem] w-[70vw] bg-black`,
+        h-[0.10rem]
+        w-[70vw]
+        bg-[#c4c4c4]
+        mb-10`,
   FooterDividingLineBreakpointStyles: cntl``,
 
   SectionOneContainer: cntl`
-        flex flex-row space-x-10`,
+        flex flex-row space-x-[5vw]`,
   SectionOneContainerBreakpointStyles: cntl``,
 
   ContactDetailsContainer: cntl``,
@@ -21,7 +24,7 @@ export const FooterSectionOne = {
         flex flex-col items-center`,
   ContainerBreakpointStyles: cntl``,
 
-  Text: cntl``,
+  Text: cntl`text-[#9CA3AF] text-center after:content-[':']`,
   TextBreakpointStyles: cntl``,
 
   LogoContainer: cntl`
@@ -30,8 +33,8 @@ export const FooterSectionOne = {
   LogoContainerBreakpointStyles: cntl``,
 
   Logo: cntl`
-        h-12 w-12
-     bg-black rounded-full
+        h-14 w-14
+     
     `,
   LogoBreakpointStyles: cntl``,
 };

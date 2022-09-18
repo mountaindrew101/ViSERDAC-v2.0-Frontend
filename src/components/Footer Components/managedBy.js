@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { FooterSectionOne } from "../styles/footerStyle";
 
@@ -11,7 +12,13 @@ export const ManagedBy = () => {
         FooterSectionOne.ContainerBreakpointStyles
       }
     >
-      <span>Managed By</span>
+      <span
+        className={
+          FooterSectionOne.Text + " " + FooterSectionOne.TextBreakpointStyles
+        }
+      >
+        Managed By
+      </span>
       <div
         id="Logo Container"
         className={
@@ -24,17 +31,38 @@ export const ManagedBy = () => {
           className={
             FooterSectionOne.Logo + " " + FooterSectionOne.LogoBreakpointStyles
           }
-        ></div>
+        >
+          <StaticImage
+            src="../../images/ViSERDAC-Logo.png"
+            loading="lazy"
+            placeholder="blurred"
+            alt="ViSERDAC"
+          />
+        </div>
         <div
           className={
             FooterSectionOne.Logo + " " + FooterSectionOne.LogoBreakpointStyles
           }
-        ></div>
+        >
+          <StaticImage
+            src="../../images/VSU Logo-01.png"
+            loading="lazy"
+            placeholder="blurred"
+            alt="VSU"
+          />
+        </div>
         <div
           className={
             FooterSectionOne.Logo + " " + FooterSectionOne.LogoBreakpointStyles
           }
-        ></div>
+        >
+          <StaticImage
+            src="../../images/CME.png"
+            loading="lazy"
+            placeholder="blurred"
+            alt="VSU - CME"
+          />
+        </div>
       </div>
     </div>
   );

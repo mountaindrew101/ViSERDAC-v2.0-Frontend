@@ -44,7 +44,7 @@ export const WeSpecializeStyles = {
         sm:w-[400px]
         xs:h-[200px]
         xs:w-[300px]
-        min-xl:group-hover:scale-105
+        min-lg:group-hover:scale-105
         `,
 
   Content_h3: cntl`
@@ -69,13 +69,14 @@ export const WeSpecializeStyles = {
   ButtonBreakpointStyles: cntl` 
         xs:ml-8 
         xs:text-[0.7rem] 
-         xs:p-1 
+		xs:p-1 
         xs:pr-4 
         xs:pl-4 
         lg:text-sm 
-        min-xl:hover:scale-105
-        min-xl:hover:bg-white 
-        min-xl:hover:-translate-y-1 min-xl:hover:shadow-xl`,
+
+        min-lg:hover:scale-105
+        min-lg:hover:bg-white 
+        min-lg:hover:-translate-y-1 min-xl:hover:shadow-xl`,
 };
 
 export const GetOpenAccessStyles = {
@@ -90,7 +91,7 @@ export const GetOpenAccessStyles = {
         lg:mr-36 
         xs:ml-[9rem] 
 
-        min-xl:hover:z-40`,
+        min-lg:hover:z-40`,
 
   ContentContainer: cntl`
         transition duration-300 ease-in-out 
@@ -105,7 +106,7 @@ export const GetOpenAccessStyles = {
         xs:h-[260px] 
         xs:w-[300px] 
          
-        min-xl:group-hover:scale-105`,
+        min-lg:group-hover:scale-105`,
 
   Content_h3Title: cntl`
         text-5xl 
@@ -138,10 +139,10 @@ export const GetOpenAccessStyles = {
         xs:pr-4 
         xs:pl-4  
 
-        min-xl:hover:bg-white 
-        min-xl:hover:-translate-y-1 
-        min-xl:hover:shadow-xl
-        min-xl:hover:scale-105`,
+        min-lg:hover:bg-white 
+        min-lg:hover:-translate-y-1 
+        min-lg:hover:shadow-xl
+        min-lg:hover:scale-105`,
 };
 
 export const ProvideTechnicalAssistanceStyles = {
@@ -154,7 +155,7 @@ export const ProvideTechnicalAssistanceStyles = {
   		lg:mt-0
   		lg:ml-0
 
-  		min-xl:hover:z-40`,
+  		min-lg:hover:z-40`,
 
   ContentContainer: cntl`
   		transition duration-300 ease-in-out
@@ -171,7 +172,8 @@ export const ProvideTechnicalAssistanceStyles = {
 		sm:w-[400px]
 		xs:h-[200px]
 		xs:w-[300px]
-		min-xl:group-hover:scale-105`,
+
+		min-lg:group-hover:scale-105`,
 
   Content_h3: cntl`
 		text-5xl font-bold text-[#DCE775]
@@ -204,8 +206,8 @@ export const ProvideTechnicalAssistanceStyles = {
   		xs:pl-4
   		lg:text-sm
 
-		min-xl:hover:scale-105
-		min-xl:hover:-translate-y-1
-		min-xl:hover:shadow-xl
-		min-xl:hover:bg-white`,
+		min-lg:hover:scale-105
+		min-lg:hover:-translate-y-1
+		min-lg:hover:shadow-xl
+		min-lg:hover:bg-white`,
 };

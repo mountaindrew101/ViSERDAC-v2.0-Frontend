@@ -1,5 +1,6 @@
 import React from "react";
 import { FooterSectionOne } from "../styles/footerStyle";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const FundedBy = () => {
   return (
@@ -11,7 +12,13 @@ export const FundedBy = () => {
         FooterSectionOne.ContainerBreakpointStyles
       }
     >
-      <span>Funded By</span>
+      <span
+        className={
+          FooterSectionOne.Text + " " + FooterSectionOne.TextBreakpointStyles
+        }
+      >
+        Funded By
+      </span>
       <div
         id="Logo Container"
         className={
@@ -24,17 +31,14 @@ export const FundedBy = () => {
           className={
             FooterSectionOne.Logo + " " + FooterSectionOne.LogoBreakpointStyles
           }
-        ></div>
-        <div
-          className={
-            FooterSectionOne.Logo + " " + FooterSectionOne.LogoBreakpointStyles
-          }
-        ></div>
-        <div
-          className={
-            FooterSectionOne.Logo + " " + FooterSectionOne.LogoBreakpointStyles
-          }
-        ></div>
+        >
+          <StaticImage
+            src="../../images/PCAARRD.png"
+            loading="lazy"
+            placeholder="blurred"
+            alt="PCAARRD"
+          />
+        </div>
       </div>
     </div>
   );

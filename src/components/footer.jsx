@@ -6,6 +6,7 @@ import { InPartnership } from "./Footer Components/inPartnership";
 import { ManagedBy } from "./Footer Components/managedBy";
 import { FundedBy } from "./Footer Components/fundedBy";
 import { FooterStyles } from "./styles/footerStyle";
+import { ContactDetails } from "./Footer Components/contactDetails";
 
 export const Footer = () => {
   return (
@@ -37,14 +38,7 @@ export const Footer = () => {
         <ManagedBy />
         <FundedBy />
       </div>
-      <div
-        id="ContactDetailsContainer"
-        className={
-          FooterStyles.ContactDetailsContainer +
-          " " +
-          FooterStyles.ContactDetailsContainerBreakpointStyles
-        }
-      ></div>
+      <ContactDetails />
     </div>
   );
 };
