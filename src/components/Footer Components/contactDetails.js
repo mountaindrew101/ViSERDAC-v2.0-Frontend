@@ -147,28 +147,40 @@ export const ContactDetails = () => {
               FooterLinks.Links + " " + FooterLinks.LinksBreakpointStyles
             }
           >
-            <a href="/">Visayas State University</a>
+            <a href="https://www.vsu.edu.ph/" target="_blank" rel="noreferrer">
+              Visayas State University
+            </a>
           </li>
           <li
             className={
               FooterLinks.Links + " " + FooterLinks.LinksBreakpointStyles
             }
           >
-            <a href="/">University of South Eastern Philippines</a>
+            <a href="https://www.usep.edu.ph/" target="_blank" rel="noreferrer">
+              University of South Eastern Philippines
+            </a>
           </li>
           <li
             className={
               FooterLinks.Links + " " + FooterLinks.LinksBreakpointStyles
             }
           >
-            <a href="/">Central Luzon State University</a>
+            <a href="https://clsu.edu.ph/" target="_blank" rel="noreferrer">
+              Central Luzon State University
+            </a>
           </li>
           <li
             className={
               FooterLinks.Links + " " + FooterLinks.LinksBreakpointStyles
             }
           >
-            <a href="/">DOST-PCAARRD</a>
+            <a
+              href="http://www.pcaarrd.dost.gov.ph/home/portal/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              DOST-PCAARRD
+            </a>
           </li>
         </ul>
       </div>

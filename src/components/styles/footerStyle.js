@@ -53,7 +53,8 @@ export const FooterContactDetails = {
   ContactBreakpointStyles: cntl``,
 
   Address: cntl`
-  		flex items-center space-x-7 ml-3`,
+  		flex items-center space-x-7 ml-3
+		cursor-pointer`,
   AddressBreakpointStyles: cntl``,
 
   Landline: cntl`
