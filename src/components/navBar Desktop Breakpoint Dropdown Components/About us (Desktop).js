@@ -1,18 +1,13 @@
 import { Link } from "gatsby";
 import React from "react";
+
 import {
   navListItemStyle,
   listItemGreenBarStyle,
-  ArrowNavStyle,
   groupController,
-  desktopDropdownContainerStyle,
-  navDropdownMapStyle,
-  desktopDropdownSubContainerStyle,
 } from "../styles/navbarStyles";
 import { motion } from "framer-motion";
 import { hoverExpand } from "../styles/navbarStyles";
-import { ArrowNav } from "../assets/arrowDownSVG";
-import { aboutUsDropdownList } from "./About us Dropdown List";
 
 export const AboutUsDesktop = () => {
   return (
@@ -36,33 +31,12 @@ export const AboutUsDesktop = () => {
         <li className={groupController}>
           <Link to="/" className={navListItemStyle}>
             About us
-            <ArrowNav ArrowClasses={ArrowNavStyle} />
           </Link>
           <motion.span
             variants={hoverExpand}
-            className={`w-[5.5rem] ${listItemGreenBarStyle}`}
+            className={`w-[4.3rem] ${listItemGreenBarStyle}`}
             id="listItemGreenBar"
           ></motion.span>
-          <div
-            className={`${desktopDropdownContainerStyle} ml-[-10rem]`}
-            id="aboutUsDropdownContainer"
-          >
-            <div
-              className={desktopDropdownSubContainerStyle}
-              id="aboutUsDropdownSubContainer"
-            >
-              {aboutUsDropdownList.map((list) => (
-                <Link
-                  key={list.title}
-                  id="aboutUsListItem"
-                  to={list.link}
-                  className={navDropdownMapStyle}
-                >
-                  {list.title}
-                </Link>
-              ))}
-            </div>
-          </div>
         </li>
       </motion.div>
     </motion.div>

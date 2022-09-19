@@ -1,13 +1,14 @@
-import { Link } from "gatsby";
 import React from "react";
-import {
-  navListItemStyle,
-  listItemGreenBarStyle,
-} from "../styles/navbarStyles";
 import { motion } from "framer-motion";
+import { Link } from "gatsby";
+import {
+  groupController,
+  listItemGreenBarStyle,
+  navListItemStyle,
+} from "../styles/navbarStyles";
 import { hoverExpand } from "../styles/navbarStyles";
 
-export const DatasetsDesktop = () => {
+export const ServicesOfferedDesktopDropdown = () => {
   return (
     <motion.div
       initial={{ y: "-20px", rotate: 1, opacity: 0 }}
@@ -16,23 +17,19 @@ export const DatasetsDesktop = () => {
         duration: 0.2,
         ease: "easeInOut",
         type: "spring",
-        delay: 0.15,
+        delay: 0.1,
         stiffness: 100,
       }}
+      id="servicesOfferedDesktopListItem"
     >
-      <motion.div
-        initial="rest"
-        whileHover="hover"
-        animate="rest"
-        className="group"
-      >
-        <li>
-          <Link to="/" className={navListItemStyle}>
-            Datasets
+      <motion.div initial="rest" whileHover="hover" animate="rest">
+        <li className={groupController}>
+          <Link to="/servicesOffered" className={`${navListItemStyle}`}>
+            Services Offered
           </Link>
           <motion.span
             variants={hoverExpand}
-            className={`w-[4.4rem] ${listItemGreenBarStyle}`}
+            className={`w-[7.9rem] ${listItemGreenBarStyle}`}
             id="listItemGreenBar"
           ></motion.span>
         </li>

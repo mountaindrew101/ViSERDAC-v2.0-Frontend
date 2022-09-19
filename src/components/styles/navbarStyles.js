@@ -43,28 +43,3 @@ export const ArrowNavStyle = cntl`
 export const listItemGreenBarStyle = cntl`absolute top-[65%] h-[1.5px] rounded-xl bg-green-nav`;
 
 export const groupController = cntl`group`;
-
-export const desktopDropdownContainerStyle = cntl`
-    container
-    absolute
-    invisible
-    -mt-2
-    -translate-y-3 opacity-0
-    group-hover:visible group-hover:translate-y-0 group-hover:opacity-100
-    transition-all ease-in-out duration-400`;
-
-export const desktopDropdownSubContainerStyle = cntl`
-    text-[0.8rem]
-    w-[500px]
-    h-[150px]
-    pl-5 pt-5 mt-5 mb-5
-    bg-white rounded-[21px]
-    drop-shadow-thicknear
-    flex flex-col flex-wrap`;
-
-export const navDropdownMapStyle = cntl`
-    p-[0.2rem] pb-2
-    transition
-    duration-200
-    ease-in-out
-    hover:drop-shadow-md hover:-translate-y-1 hover:text-green-nav`;

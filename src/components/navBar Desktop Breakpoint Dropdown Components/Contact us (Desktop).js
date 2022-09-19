@@ -28,11 +28,11 @@ export const ContactUsDesktop = () => {
       >
         <li>
           <Link to="/" className={navListItemStyle}>
-            Publication
+            Contact us
           </Link>
           <motion.span
             variants={hoverExpand}
-            className={`w-[6rem] ${listItemGreenBarStyle}`}
+            className={`w-[5.3rem] ${listItemGreenBarStyle}`}
             id="listItemGreenBar"
           ></motion.span>
         </li>

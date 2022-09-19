@@ -1,3 +1,5 @@
+// ! warn: empty strings should be included in between className concatenations for the styles to work
+
 import React from "react";
 import { useRef } from "react";
 import { NavBar } from "./navbar";
@@ -14,7 +16,7 @@ import {
 } from "./styles/headerStyles";
 
 import { motion } from "framer-motion";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Link } from "gatsby";
 
 import ViSERDACLogo from "./assets/ViSERDAC-Logo-Landscape.inline.svg";
 import { BackToTop } from "./backToTop";
@@ -23,7 +25,7 @@ import useOnScreen from "./hooks/useOnScreenHook";
 
 export const Header = () => {
   const ref = useRef();
-  const isVisible = useOnScreen(ref);
+  let isVisible = useOnScreen(ref);
 
   return (
     <motion.div
@@ -40,29 +42,44 @@ export const Header = () => {
         delay: 0.15,
         stiffness: 100,
       }}
+      className="relative z-50"
     >
-      <header className={headerContainerStyle} id="headerContainer">
+      <header
+        className={
+          headerContainerStyle.Main + " " + headerContainerStyle.Breakpoints
+        }
+        id="headerContainer"
+      >
         <div className={yellowBarStyle} id="yellowBar"></div>
         <div
-          className={headerSubContainerStyle}
+          className={
+            headerSubContainerStyle.Main +
+            " " +
+            headerSubContainerStyle.Breakpoints
+          }
           id="headerSubContainer"
           ref={ref}
         >
-          <AniLink
-            hex="#003D00"
-            paintDrip
+          <Link
             to="/"
-            className={headerLogoDesktopStyle}
+            className={
+              headerLogoDesktopStyle.Main +
+              " " +
+              headerLogoDesktopStyle.Breakpoints
+            }
             id="ViSERDAC Logo"
           >
             <ViSERDACLogo />
-          </AniLink>
+          </Link>
           <div className={gapControllerStyle} id="gapController"></div>
           <NavBar />
         </div>
       </header>
 
-      <div className={backToTopParentContainerStyle}>
+      <div
+        id="BackToTopParentContainer"
+        className={backToTopParentContainerStyle}
+      >
         <div
           id="backToTopContainer"
           className={

@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     "gatsby-plugin-mailgo",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",

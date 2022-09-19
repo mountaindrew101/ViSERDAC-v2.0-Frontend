@@ -32,7 +32,7 @@ export const PublicationDesktop = () => {
           </Link>
           <motion.span
             variants={hoverExpand}
-            className={`w-[5.5rem] ${listItemGreenBarStyle}`}
+            className={`w-[5.4rem] ${listItemGreenBarStyle}`}
             id="listItemGreenBar"
           ></motion.span>
         </li>

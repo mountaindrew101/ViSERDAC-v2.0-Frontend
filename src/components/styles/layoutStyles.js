@@ -11,10 +11,13 @@ export const layoutContainerStyle = cntl`
 export const backToTopStyles = {
   backToTopParent: cntl`
         w-14 h-14
-        bg-[#FDCB00] rounded-full
+        bg-[#FDCB00]
+        rounded-full
         flex justify-center items-center
-        translate-y-[0.12rem] drop-shadow-thicknear
-        transition duration-500 ease-in-out`,
+        translate-y-[0.12rem]
+        drop-shadow-thicknear
+        transition duration-500 ease-in-out
+        z-50`,
   backtoTopSubParent: cntl`
         w-14 h-14
         bg-[#003D00] rounded-full
