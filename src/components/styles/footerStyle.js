@@ -56,6 +56,15 @@ export const FooterContactDetails = {
   		flex items-center space-x-7 ml-3
 		cursor-pointer`,
   AddressBreakpointStyles: cntl``,
+  AddressText: cntl`
+  		cursor-pointer
+  		transition
+  		duration-300
+  		ease-in-out
+
+  		hover:text-[#003D00]
+  		hover:translate-x-2
+		hover:underline`,
 
   Landline: cntl`
   		flex items-center space-x-3 `,
