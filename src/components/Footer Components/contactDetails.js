@@ -20,7 +20,6 @@ export const ContactDetails = () => {
   const [Copied, ShowCopied] = useState(false);
   const ToggleCopy = () => {
     ShowCopied(true);
-    console.log(Copied);
   };
   const CopyFunctions = () => {
     CopyText();
@@ -70,14 +69,19 @@ export const ContactDetails = () => {
           }
         >
           <LocationSVG />
-          <span>
+          <a
+            href="https://www.google.com/maps/search/10.745019939618311,+124.79472121098364?sa=X&ved=2ahUKEwjPlpWtj5_6AhURVd4KHQhxCoMQ8gF6BAgEEAE"
+            target="_blank"
+            rel="noreferrer"
+            className={FooterContactDetails.AddressText}
+          >
             <strong>
               Visayas Socio-Economic Research and Data Analytics Center
             </strong>
             <br />
             1/F Department of Economics, Visayas State University <br />
             Visca, Baybay City, Leyte, 6521, Philippines
-          </span>
+          </a>
         </div>
         <div
           id="Landline"
