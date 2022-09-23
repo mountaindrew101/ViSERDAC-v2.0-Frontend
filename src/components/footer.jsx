@@ -5,10 +5,12 @@ import React from "react";
 import { InPartnership } from "./Footer Components/inPartnership";
 import { ManagedBy } from "./Footer Components/managedBy";
 import { FundedBy } from "./Footer Components/fundedBy";
-import { FooterStyles } from "./styles/footerStyle";
+import { FooterStyles, Copyright } from "./styles/footerStyle";
 import { ContactDetails } from "./Footer Components/contactDetails";
 
 export const Footer = () => {
+  const today = new Date();
+
   return (
     <div
       id="container"
@@ -39,6 +41,9 @@ export const Footer = () => {
         <FundedBy />
       </div>
       <ContactDetails />
+      <div id="Copyright" className={Copyright}>
+        Copyright © {today.getFullYear()} - ViSERDAC. All rights reserved
+      </div>
     </div>
   );
 };

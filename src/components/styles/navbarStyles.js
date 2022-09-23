@@ -40,6 +40,6 @@ export const ArrowNavStyle = cntl`
     mt-0.5
     group-hover:fill-[#388E3C]`;
 
-export const listItemGreenBarStyle = cntl`absolute top-[65%] h-[1.5px] rounded-xl bg-green-nav`;
+export const listItemGreenBarStyle = cntl`absolute top-[65%] h-[2px] rounded-xl bg-green-nav`;
 
 export const groupController = cntl`group`;
