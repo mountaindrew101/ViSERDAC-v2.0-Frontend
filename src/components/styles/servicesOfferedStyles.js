@@ -1,7 +1,9 @@
 import cntl from "cntl";
 
 export const ServicesOfferedContainer = cntl`
- bg-gradient-to-b from-[#B2D966] via-[#D7E4AD] to-[#F6F8D4] w-screen flex flex-col items-center`;
+ 		bg-gradient-to-b from-[#B2D966] via-[#D7E4AD] to-[#F6F8D4]
+		w-screen flex flex-col items-center
+		py-10`;
 
 export const ServicesOfferedItemsStyle = {
   ItemContainer: cntl`
@@ -61,4 +63,9 @@ export const ServicesOfferedItemsStyle = {
   PtTwoBreakpointStyles: cntl``,
 
   SectionTwo: cntl`flex justify-center`,
+  SectionThree: cntl`
+  		bg-[#FDCB00]
+		px-12 py-4
+		rounded-full
+		mb-10`,
 };
