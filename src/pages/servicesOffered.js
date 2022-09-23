@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import React from "react";
 import { Layout } from "../components/layout";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { motion } from "framer-motion";
 
 import {
   ServicesOfferedContainer,
@@ -12,15 +13,26 @@ import {
 
 const ServicesOffered = ({ data }) => {
   const ServicesOfferedItems = data.allStrapiServicesOffered.nodes;
-
-  // console.log(ServicesOfferedItems);
+  const ServicesOfferedItemsAscending = []
+    .concat(ServicesOfferedItems)
+    .sort((a, b) => (a.Order_Number > b.Order_Number ? 1 : -1));
+  console.log(ServicesOfferedItemsAscending);
 
   return (
     <Layout>
       <div className={ServicesOfferedContainer} id="ServicesOfferedContainer">
         {/* Item Iteration */}
-        {ServicesOfferedItems.map((Item) => (
-          <div
+        {ServicesOfferedItemsAscending.map((Item) => (
+          <motion.div
+            initial={{ x: "-50px", rotate: 1, opacity: 0 }}
+            whileInView={{ x: 0, rotate: 0, opacity: 1 }}
+            transition={{
+              duration: 0.2,
+              ease: "easeInOut",
+              type: "spring",
+              delay: 0.1,
+              stiffness: 100,
+            }}
             className={
               ServicesOfferedItemsStyle.ItemContainer +
               " " +
@@ -141,8 +153,17 @@ const ServicesOffered = ({ data }) => {
                 />
               )}
             </div>
-          </div>
+          </motion.div>
         ))}
+        <div
+          id="SectionThree"
+          className={ServicesOfferedItemsStyle.SectionThree}
+        >
+          To avail our services, send us an email at{" "}
+          <a href="mailto:viserdac@vsu.edu.ph" className="underline">
+            viserdac@vsu.edu.ph
+          </a>
+        </div>
       </div>
     </Layout>
   );
