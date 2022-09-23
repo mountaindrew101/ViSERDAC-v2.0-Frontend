@@ -15,7 +15,7 @@ const Home = () => {
 export default Home;
 
 // TODO: HOMEPAGE => [ViSERDAC Statistics, Avail our services now, ViSERDAC Video]
-// TODO: Graphql => [API fetching]
+// // TODO: Graphql => [API fetching]
 // TODO: Back-end deployment
 // TODO: SEO & Helmet
 // TODO: About us - LinkedIn accs
