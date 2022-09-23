@@ -20,6 +20,7 @@ module.exports = {
   theme: {
     fontFamily: {
       poppins: ["poppins", "sans-serif"],
+      Metropolis: ["metropolis", "sans-serif"],
     },
     extend: {
       backgroundImage: {
@@ -39,6 +40,7 @@ module.exports = {
       colors: {
         "green-nav": "#388E3C",
         "green-nav-div-top": "#003D00",
+        "white-80%": "rgba(255, 255, 255, 0.9)",
       },
     },
     screens: {

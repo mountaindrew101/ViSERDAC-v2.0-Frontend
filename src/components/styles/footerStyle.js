@@ -123,3 +123,9 @@ export const FooterLinks = {
 		hover:translate-x-2`,
   LinksBreakpointStyles: cntl``,
 };
+
+export const Copyright = cntl`
+            flex justify-center
+            mt-10 h-10
+            bg-gradient-to-b from-white to-gray-300
+            w-screen text-xs`;

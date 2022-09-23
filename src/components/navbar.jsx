@@ -1,9 +1,9 @@
 import React from "react";
-import { AboutUsDesktop } from "./navBar Desktop Breakpoint Dropdown Components/About us (Desktop)";
-import { ContactUsDesktop } from "./navBar Desktop Breakpoint Dropdown Components/Contact us (Desktop)";
-import { DatasetsDesktop } from "./navBar Desktop Breakpoint Dropdown Components/Datasets (Desktop)";
-import { PublicationDesktop } from "./navBar Desktop Breakpoint Dropdown Components/Publication (Desktop)";
-import { ServicesOfferedDesktopDropdown } from "./navBar Desktop Breakpoint Dropdown Components/Services Offered (Desktop)";
+import { AboutUsDesktop } from "./navBar Desktop Breakpoint Components/About us (Desktop)";
+import { ContactUsDesktop } from "./navBar Desktop Breakpoint Components/Contact us (Desktop)";
+import { DatasetsDesktop } from "./navBar Desktop Breakpoint Components/Datasets (Desktop)";
+import { PublicationDesktop } from "./navBar Desktop Breakpoint Components/Publication (Desktop)";
+import { ServicesOfferedDesktopDropdown } from "./navBar Desktop Breakpoint Components/Services Offered (Desktop)";
 import { navBarListStyle, navBarStyle } from "./styles/navbarStyles";
 
 export const NavBar = () => {
