@@ -15,8 +15,8 @@ const Home = () => {
 export default Home;
 
 // TODO: HOMEPAGE => [ViSERDAC Statistics, Avail our services now, ViSERDAC Video]
+// TODO: Error 404 Page
 // // TODO: Graphql => [API fetching]
-// TODO: Back-end deployment
+// TODO: Back-end deployment - Heroku w/posgresql
 // TODO: SEO & Helmet
 // TODO: About us - LinkedIn accs
-// TODO: Text animations through gsap

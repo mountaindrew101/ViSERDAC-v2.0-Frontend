@@ -1,10 +1,10 @@
-// ! warn: empty strings should be included in between className concatenations for the styles to work
+// ! warn: empty strings should be included in between className concatenations for the styles to work properly
 
-import { graphql } from "gatsby";
 import React from "react";
 import { Layout } from "../components/layout";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { motion } from "framer-motion";
+import { items } from "../components/Services Offered Components/servicesOfferedItems";
 
 import {
   ServicesOfferedContainer,
@@ -12,7 +12,7 @@ import {
 } from "../components/styles/servicesOfferedStyles";
 
 const ServicesOffered = ({ data }) => {
-  const ServicesOfferedItems = data.allStrapiServicesOffered.nodes;
+  const ServicesOfferedItems = items;
   const ServicesOfferedItemsAscending = []
     .concat(ServicesOfferedItems)
     .sort((a, b) => (a.Order_Number > b.Order_Number ? 1 : -1));
@@ -124,18 +124,22 @@ const ServicesOffered = ({ data }) => {
                 id="PtTwoContainer"
                 className={ServicesOfferedItemsStyle.PtTwoContainer}
               >
-                <GatsbyImage
-                  className={
-                    ServicesOfferedItemsStyle.PtTwo +
-                    " " +
-                    ServicesOfferedItemsStyle.PtTwoBreakpointStyles
-                  }
-                  image={
-                    Item.Graphics.localFile.childImageSharp.gatsbyImageData
-                  }
-                  alt=""
-                  id="Graphics"
-                />
+                {Item.Graphics === null ? (
+                  <span></span>
+                ) : (
+                  <GatsbyImage
+                    className={
+                      ServicesOfferedItemsStyle.PtTwo +
+                      " " +
+                      ServicesOfferedItemsStyle.PtTwoBreakpointStyles
+                    }
+                    image={
+                      Item.Graphics.localFile.childImageSharp.gatsbyImageData
+                    }
+                    alt=""
+                    id="Graphics"
+                  />
+                )}
               </div>
             </div>
             <div
@@ -170,41 +174,3 @@ const ServicesOffered = ({ data }) => {
 };
 
 export default ServicesOffered;
-
-// ? Data query
-export const query = graphql`
-  query ServicesOfferedQuery {
-    allStrapiServicesOffered {
-      nodes {
-        Button
-        Order_Number
-        Description
-        Title
-        Subtitle
-        Button_Text
-        Graphics {
-          localFile {
-            childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-            }
-          }
-        }
-        Button_Icon {
-          localFile {
-            childImageSharp {
-              gatsbyImageData(placeholder: TRACED_SVG, layout: CONSTRAINED)
-            }
-          }
-        }
-        Content_Image {
-          localFile {
-            childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-            }
-          }
-        }
-        Button_Link
-      }
-    }
-  }
-`;
