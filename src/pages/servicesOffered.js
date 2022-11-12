@@ -11,12 +11,12 @@ import {
   ServicesOfferedItemsStyle,
 } from "../components/styles/servicesOfferedStyles";
 
-const ServicesOffered = ({ data }) => {
+const ServicesOffered = () => {
   const ServicesOfferedItems = items;
   const ServicesOfferedItemsAscending = []
     .concat(ServicesOfferedItems)
     .sort((a, b) => (a.Order_Number > b.Order_Number ? 1 : -1));
-  console.log(ServicesOfferedItemsAscending);
+  console.log(items.map((Item) => Item.Graphics));
 
   return (
     <Layout>
@@ -108,13 +108,7 @@ const ServicesOffered = ({ data }) => {
                       {Item.Button_Icon === null ? (
                         <div></div>
                       ) : (
-                        <GatsbyImage
-                          image={
-                            Item.Button_Icon.localFile.childImageSharp
-                              .gatsbyImageData
-                          }
-                          alt=""
-                        />
+                        <GatsbyImage image={Item.Button_Icon} alt="" />
                       )}
                     </div>
                   </button>
@@ -124,7 +118,7 @@ const ServicesOffered = ({ data }) => {
                 id="PtTwoContainer"
                 className={ServicesOfferedItemsStyle.PtTwoContainer}
               >
-                {Item.Graphics === null ? (
+                {Item.Graphics === "" ? (
                   <span></span>
                 ) : (
                   <GatsbyImage
@@ -133,9 +127,7 @@ const ServicesOffered = ({ data }) => {
                       " " +
                       ServicesOfferedItemsStyle.PtTwoBreakpointStyles
                     }
-                    image={
-                      Item.Graphics.localFile.childImageSharp.gatsbyImageData
-                    }
+                    image={Item.Graphics}
                     alt=""
                     id="Graphics"
                   />
@@ -149,12 +141,7 @@ const ServicesOffered = ({ data }) => {
               {Item.Content_Image === null ? (
                 <span></span>
               ) : (
-                <GatsbyImage
-                  image={
-                    Item.Content_Image.localFile.childImageSharp.gatsbyImageData
-                  }
-                  alt=""
-                />
+                <GatsbyImage image={Item.Content_Image} alt="" />
               )}
             </div>
           </motion.div>

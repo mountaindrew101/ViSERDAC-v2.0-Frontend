@@ -1,0 +1,17 @@
+
+GENERAL TODO:
+[ ] HOMEPAGE => [ViSERDAC Statistics, Avail our services now, ViSERDAC Video]
+[ ] Error 404 Page
+! [x] Graphql => [API fetching] ! //depreciated in hardcoded version
+[ ] Back-end deployment - Heroku w/posgresql
+[ ] SEO & Helmet
+[ ] About us - LinkedIn accs
+
+
+[2022-11-13]
+Notes:
+Ideas:
+TODO:
+[ ] Convert servicesOffered.js' GatsbyImage => StaticImage
+[ ] Fill servicesOfferedItems.js with the right content
+[ ] Initialize the About us page

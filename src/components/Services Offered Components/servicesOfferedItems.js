@@ -9,7 +9,7 @@
     Button_Text: "", //? string
     Button_Icon: , //? (string/null)
     Button_Link: , //? (string/null)
-    Graphics: , //? (string/null)
+    Graphics: "", //? (string)
     Content_Image: , //? (string/null)
 */
 
@@ -25,7 +25,7 @@ export const items = [
     Button_Text: "", //? string
     Button_Icon: null, //? (string/null)
     Button_Link: null, //? (string/null)
-    Graphics: null, //? (string/null)
+    Graphics: "./images/Computer-Mobile.png", //? (string)
     Content_Image: null, //? (string/null)
   },
   {
@@ -38,7 +38,7 @@ export const items = [
     Button_Text: "Download Datasets", //? string
     Button_Icon: null, //? (string/null)
     Button_Link: null, //? (string/null)
-    Graphics: null, //? (string/null)
+    Graphics: "", //? (string)
     Content_Image: null, //? (string/null)
   },
   {
@@ -51,7 +51,7 @@ export const items = [
     Button_Text: "Download Datasets", //? string
     Button_Icon: null, //? (string/null)
     Button_Link: null, //? (string/null)
-    Graphics: null, //? (string/null)
+    Graphics: "", //? (string)
     Content_Image: null, //? (string/null)
   },
   {
@@ -64,7 +64,7 @@ export const items = [
     Button_Text: "Download Datasets", //? string
     Button_Icon: null, //? (string/null)
     Button_Link: null, //? (string/null)
-    Graphics: null, //? (string/null)
+    Graphics: "", //? (string)
     Content_Image: null, //? (string/null)
   },
   {
@@ -77,7 +77,7 @@ export const items = [
     Button_Text: "Download Datasets", //? string
     Button_Icon: null, //? (string/null)
     Button_Link: null, //? (string/null)
-    Graphics: null, //? (string/null)
+    Graphics: "", //? (string)
     Content_Image: null, //? (string/null)
   },
   {
@@ -90,7 +90,7 @@ export const items = [
     Button_Text: "Download Datasets", //? string
     Button_Icon: null, //? (string/null)
     Button_Link: null, //? (string/null)
-    Graphics: null, //? (string/null)
+    Graphics: "", //? (string)
     Content_Image: null, //? (string/null)
   },
   {
@@ -103,7 +103,7 @@ export const items = [
     Button_Text: "Download Datasets", //? string
     Button_Icon: null, //? (string/null)
     Button_Link: null, //? (string/null)
-    Graphics: null, //? (string/null)
+    Graphics: "", //? (string)
     Content_Image: null, //? (string/null)
   },
   {
@@ -116,7 +116,7 @@ export const items = [
     Button_Text: "Download Datasets", //? string
     Button_Icon: null, //? (string/null)
     Button_Link: null, //? (string/null)
-    Graphics: null, //? (string/null)
+    Graphics: "", //? (string)
     Content_Image: null, //? (string/null)
   },
   {
@@ -129,7 +129,7 @@ export const items = [
     Button_Text: "Download Datasets", //? string
     Button_Icon: null, //? (string/null)
     Button_Link: null, //? (string/null)
-    Graphics: null, //? (string/null)
+    Graphics: "", //? (string)
     Content_Image: null, //? (string/null)
   },
 ];
