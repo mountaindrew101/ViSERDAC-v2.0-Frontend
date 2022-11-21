@@ -2,23 +2,23 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-const strapiConfig = {
-  apiURL: process.env.STRAPI_API_URL,
-  accessToken: process.env.STRAPI_TOKEN,
-  collectionTypes: [
-    {
-      singularName: "services-offered",
-      populate: {
-        graphics: "*",
-        button_icon: "*",
-        content_image: "*",
-      },
-    },
-    { singularName: "about-us-team-member" },
-    { singularName: "about-us-objective" },
-  ],
-  singleTypes: ["about-us-what-is-vi-serdac", "footer", "home-page"],
-};
+// const strapiConfig = {
+//   apiURL: process.env.STRAPI_API_URL,
+//   accessToken: process.env.STRAPI_TOKEN,
+//   collectionTypes: [
+//     {
+//       singularName: "services-offered",
+//       populate: {
+//         graphics: "*",
+//         button_icon: "*",
+//         content_image: "*",
+//       },
+//     },
+//     { singularName: "about-us-team-member" },
+//     { singularName: "about-us-objective" },
+//   ],
+//   singleTypes: ["about-us-what-is-vi-serdac", "footer", "home-page"],
+// };
 
 module.exports = {
   siteMetadata: {
@@ -39,10 +39,10 @@ module.exports = {
         icon: "./src/images/ViSERDAC-Favicon.png",
       },
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: strapiConfig,
-    },
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: strapiConfig,
+    // },
     `gatsby-plugin-transition-link`,
     "gatsby-plugin-mailgo",
     "gatsby-plugin-image",

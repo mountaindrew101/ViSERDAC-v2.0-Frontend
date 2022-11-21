@@ -3,15 +3,35 @@ GENERAL TODO:
 [ ] HOMEPAGE => [ViSERDAC Statistics, Avail our services now, ViSERDAC Video]
 [ ] Error 404 Page
 ! [x] Graphql => [API fetching] ! //depreciated in hardcoded version
-[ ] Back-end deployment - Heroku w/posgresql
+! [ ] Back-end deployment - Heroku w/posgresql ! // derecated in hardcoded version
 [ ] SEO & Helmet
 [ ] About us - LinkedIn accs
 
-
+------------------------------------
 [2022-11-13]
 Notes:
+    - had problems with using StaticImage instead of GatsbyImage since StaticImage does'nt accept props outside the file.
+    - tried giving it a shot by using svg, but I'm afraid svg would make our js object larger and harder to read.
 Ideas:
 TODO:
-[ ] Convert servicesOffered.js' GatsbyImage => StaticImage
 [ ] Fill servicesOfferedItems.js with the right content
-[ ] Initialize the About us page
+[√] Initialize the About us page
+[!] Convert servicesOffered.js' GatsbyImage => svg
+
+------------------------------------
+[2022-11-14]
+Notes:
+Ideas:
+    - services offered problem: worst case scenario is to hardcode the data and code split as well.
+TODO:
+[ ] About us components
+    [√] whatIsViserdac.js
+        [ ] add framer motion
+    [ ] missionVision.js
+    [ ] objectives.js
+    [ ] otherSerdacs.js
+    [ ] scopeOfReach.js
+    [ ] meetOurTeam.js
+[ ] fix services offered problem in JSON images
+
+#003D00

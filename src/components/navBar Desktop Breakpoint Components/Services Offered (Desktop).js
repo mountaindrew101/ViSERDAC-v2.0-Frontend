@@ -8,7 +8,7 @@ import {
 } from "../styles/navbarStyles";
 import { hoverExpand } from "../styles/navbarStyles";
 
-export const ServicesOfferedDesktopDropdown = () => {
+export const ServicesOfferedDesktop = () => {
   return (
     <motion.div
       initial={{ y: "-20px", rotate: 1, opacity: 0 }}

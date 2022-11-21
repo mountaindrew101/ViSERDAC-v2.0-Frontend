@@ -29,7 +29,7 @@ export const AboutUsDesktop = () => {
         className="group"
       >
         <li className={groupController}>
-          <Link to="/" className={navListItemStyle}>
+          <Link to="/aboutUs" className={navListItemStyle}>
             About us
           </Link>
           <motion.span
