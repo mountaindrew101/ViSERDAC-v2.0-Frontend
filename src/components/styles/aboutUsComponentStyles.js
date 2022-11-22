@@ -75,3 +75,66 @@ export const WhatIsViserdacStyles = {
     tracking-wider
     `,
 };
+
+export const MissionVisionStyles = {
+  MissionVisionContainer: cntl`
+    w-[50rem] h-[28rem]
+    bg-[#EFE7D0]
+    rounded-[3rem]
+    flex
+    justify-center
+    items-center
+    pt-16
+    `,
+
+  VisionContainer: cntl`
+    w-[30rem] h-auto
+     container relative
+     flex justify-center
+    `,
+
+  VisionBG: cntl`
+    mr-[-10rem]
+    w-[25rem] h-auto
+    absolute top-[-10rem] z-0
+    `,
+
+  VisionTextContainer: cntl`
+    z-10
+    mt-[-8rem]
+    w-[20rem]
+    text-end
+    flex flex-col items-end`,
+
+  VisionTitle: cntl`
+    font-bold tracking-[0.2em] text-[2.3rem] text-[#003d00]
+    drop-shadow-thicknear `,
+
+  VisionSubtitle: cntl`
+    w-[15rem] text-[1.15rem]
+    font-medium leading-relaxed`,
+
+  MissionContainer: cntl`
+    w-[30rem] container relative flex justify-center
+    `,
+
+  MissionBG: cntl`
+    ml-[-6.7rem]
+    mt-[-9.1rem]
+    w-[19rem] h-auto
+    absolute z-0
+    `,
+  MissionTextContainer: cntl`
+    z-10
+    mr-[7rem]
+    mt-[-7rem]
+    w-[14rem]
+    text-end
+    flex flex-col items-end`,
+
+  MissionTitle: cntl`
+    font-bold tracking-[0.2em] text-[2.3rem] text-[#F7F5F4]
+    drop-shadow-thicknear self-start`,
+
+  MissionSubtitle: cntl`text-white font-medium text-[1.05rem]`,
+};
