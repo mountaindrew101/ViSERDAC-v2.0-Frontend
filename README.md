@@ -31,3 +31,5 @@
 6. Now make changes to the front-end src folder, they will reflect on your project.
 
 #### Feature requests and PR’s are welcome! If you’re having a problem please leave an issue and I’ll help you out asap.
+
+### ! Note: This version of ViSERDAC has no Back-end, all data from the site is hardcoded.

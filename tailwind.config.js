@@ -25,6 +25,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        MapBG: "url('/src/images/MapBG.png')",
       },
       dropShadow: {
         thicknearwhite: "3px 4px 2px rgba(255, 255, 255, 0.15)",
@@ -41,6 +42,7 @@ module.exports = {
         "green-nav": "#388E3C",
         "green-nav-div-top": "#003D00",
         "white-80%": "rgba(255, 255, 255, 0.9)",
+        current: "currentColor",
       },
     },
     screens: {

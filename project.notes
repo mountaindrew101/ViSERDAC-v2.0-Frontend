@@ -43,10 +43,29 @@ TODO:
 [ ] About us components
     [√] whatIsViserdac.js
         [√] add framer motion
-    [ ] missionVision.js
+    [√] missionVision.js
     [ ] objectives.js
     [ ] otherSerdacs.js
     [ ] scopeOfReach.js
     [ ] meetOurTeam.js
 [ ] fix services offered problem in JSON images
+
+[2022-11-24]
+Notes:
+Ideas:
+TODO:
+Ideas:
+    - services offered problem: worst case scenario is to hardcode the data and code split as well.
+TODO:
+[ ] About us components
+    [√] whatIsViserdac.js
+        [√] add framer motion
+    [√] missionVision.js
+    [√] otherSerdacs.js
+    [ ] objectives.js
+    [ ] scopeOfReach.js
+    [ ] meetOurTeam.js
+[ ] fix services offered problem in JSON images
+
+
 #003D00

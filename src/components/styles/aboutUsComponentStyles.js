@@ -85,6 +85,7 @@ export const MissionVisionStyles = {
     justify-center
     items-center
     pt-16
+    drop-shadow-md
     `,
 
   VisionContainer: cntl`
@@ -137,4 +138,101 @@ export const MissionVisionStyles = {
     drop-shadow-thicknear self-start`,
 
   MissionSubtitle: cntl`text-white font-medium text-[1.05rem]`,
+};
+
+export const OtherSERDACsStyles = {
+  Container: cntl`
+    flex
+    flex-col
+    justify-center
+    items-center`,
+  Title: cntl`
+    bg-[#003D00]
+    text-[#FDCB00]
+    font-bold
+    text-[2.5rem]
+    rounded-full
+    px-10
+     `,
+  Subcontainer: cntl`flex space-x-4 justify-center items-center`,
+  Map: cntl`
+    bg-[#D1F1FF]
+    rounded-[3rem]
+    px-[6rem] py-[1.2rem]
+    drop-shadow-thickmd
+    scale-[.85]
+    `,
+  MapComponents: cntl`
+    drop-shadow-thicknear
+    fill-[#388E3C]
+    w-[18rem]
+    transition
+    duration-200
+    ease-in-out
+  `,
+  MapComponentHover: cntl`fill-[#FDCB00]`,
+  SERDACsContainer: cntl`
+    flex flex-col
+    space-y-5 my-10
+    w-[30rem]
+   
+    `,
+  SERDACsSubcontainer: cntl`
+    flex
+    space-x-5
+    bg-[#FDCB00]
+    rounded-[1.9rem]
+    px-6 py-2
+    drop-shadow-thicknear
+    transition
+    duration-200
+    ease-in-out
+
+    hover:-translate-y-2
+    `,
+  SERDACsText: cntl`
+    flex flex-col
+    justify-center
+    text-center
+    font-Metropolis
+    drop-shadow-thicknear
+    text-[1.2rem]
+    font-bold
+    `,
+  SERDACsLogo: cntl`w-[30%] flex justify-center`,
+  SERDACsTextTitle: cntl`text-white`,
+  SERDACsTextSubtitle: cntl`text-[#003D00] text-[1.8rem] leading-9`,
+};
+
+export const ObjectivesStyles = {
+  ObjectivesContainer: cntl`
+    bg-white-80%
+    rounded-[4rem]`,
+  ObjectivesTextContainer: cntl`
+    bg-[#FDCB00]    
+    rounded-full
+    `,
+  ObjectivesText: cntl`
+    font-semibold
+    text-center
+    text-[4rem]
+    pb-[1rem]
+    leading-[3.5rem]
+    text-[#003D00]
+    drop-shadow-thicknear
+`,
+  ObjectivesListParent: cntl`
+    pb-10 
+    px-10 
+    pt-5`,
+  ObjectivesListContainer: cntl`
+    flex
+    items-center
+    font-medium py-[0.2em]`,
+  ObjectivesListIcon: cntl` w-7`,
+  ObjectivesListHighlight: cntl`
+    pr-[0.3em]
+    pl-[0.5em]
+    text-[#003d00]`,
+  ObjectivesListText: cntl``,
 };

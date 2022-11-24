@@ -15,14 +15,15 @@ export const MissionVision = () => {
       id="MissionVisionContainer"
     >
       <motion.div
-        initial={{ x: -30, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ rotate: -45, x: -30, opacity: 0 }}
+        whileInView={{ rotate: 0, x: 0, opacity: 1 }}
         transition={{
           duration: 0.1,
           ease: "easeInOut",
           type: "spring",
           delay: 0.05,
-          stiffness: 150,
+          stiffness: 100,
+          damping: 12,
         }}
         className={MissionVisionStyles.VisionContainer}
         id="MissionContainer"
@@ -42,14 +43,15 @@ export const MissionVision = () => {
         </div>
       </motion.div>
       <motion.div
-        initial={{ x: 30, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ rotate: 45, x: 30, opacity: 0 }}
+        whileInView={{ rotate: 0, x: 0, opacity: 1 }}
         transition={{
           duration: 0.1,
           ease: "easeInOut",
           type: "spring",
           delay: 0.05,
-          stiffness: 150,
+          stiffness: 100,
+          damping: 12,
         }}
         className={MissionVisionStyles.MissionContainer}
         id="VisionContainer"
