@@ -13,7 +13,7 @@ export const Footer = () => {
 
   return (
     <div
-      id="container"
+      id="footerContainer"
       className={
         FooterStyles.MainContainer +
         " " +

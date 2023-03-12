@@ -1,4 +1,5 @@
 import { Link } from "gatsby";
+import scrollTo from "gatsby-plugin-smoothscroll";
 import React from "react";
 import {
   navListItemStyle,
@@ -27,9 +28,9 @@ export const ContactUsDesktop = () => {
         className="group"
       >
         <li>
-          <Link to="/" className={navListItemStyle}>
+          <button onClick={() => scrollTo("#footerContainer")} className={navListItemStyle}>
             Contact us
-          </Link>
+          </button>
           <motion.span
             variants={hoverExpand}
             className={`w-[5.3rem] ${listItemGreenBarStyle}`}
