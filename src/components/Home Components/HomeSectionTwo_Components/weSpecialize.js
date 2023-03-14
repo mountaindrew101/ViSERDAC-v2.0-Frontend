@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "gatsby"
 import { WeSpecializeStyles } from "../../styles/homeSectionTwoStyles";
 
 const WeSpecialize = () => {
@@ -40,7 +41,7 @@ const WeSpecialize = () => {
           We specialize in <br />
           Socio-Economic Research and Development
         </h3>
-        <button
+        <Link to="/aboutUs"
           className={
             WeSpecializeStyles.Button +
             " " +
@@ -62,7 +63,7 @@ const WeSpecialize = () => {
               d="M14 5l7 7m0 0l-7 7m7-7H3"
             />
           </svg>
-        </button>
+        </Link>
       </div>
     </motion.div>
   );

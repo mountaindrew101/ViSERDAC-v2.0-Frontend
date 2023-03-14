@@ -16,7 +16,7 @@ export const ServicesOfferedItemsStyle = {
 		rounded
 		px-3 py-2
 		ml-[3rem]`,
-  TitleBreakpointStyles: cntl``,
+  TitleBreakpointStyles: cntl`md:text-sm`,
 
   SectionOne: cntl`
   		pt-5
@@ -24,7 +24,7 @@ export const ServicesOfferedItemsStyle = {
 		justify-center`,
   SectionOneBreakpointStyles: cntl``,
 
-  PtOne: cntl`container w-3/4`,
+  PtOne: cntl`container w-3/4 md:w-[90%]`,
   PtOneBreakpointStyles: cntl``,
 
   PtOne_Subtitle: cntl`
@@ -32,12 +32,12 @@ export const ServicesOfferedItemsStyle = {
 		text-[3rem]
 		leading-[3rem]
 		drop-shadow-thick`,
-  PtOne_SubtitleBreakpointStyles: cntl``,
+  PtOne_SubtitleBreakpointStyles: cntl`md:text-[1.5rem] md:leading-[1.5rem]`,
 
   PtOne_Description: cntl`
   		text-[1.5rem]
 		font-extralight
-		pt-5`,
+		pt-5 md:text-[1rem] md:pt-2`,
 
   PtOne_Button: cntl`
   		bg-[#476930]
@@ -53,19 +53,19 @@ export const ServicesOfferedItemsStyle = {
 		hover:bg-white
 		hover:text-[#476930]
 		hover:-translate-y-1
-		`,
+		md:text-xs md:px-2 xs:px-3 xs:py-2 md:space-x-1`,
 
-  PtTwoContainer: cntl`w-[10rem]`,
+  PtTwoContainer: cntl`w-[10rem] md:scale-50 md:w-[5rem]`,
 
   PtTwo: cntl`
   		drop-shadow-thick
 		p-2`,
   PtTwoBreakpointStyles: cntl``,
 
-  SectionTwo: cntl`flex justify-center`,
+  SectionTwo: cntl`flex justify-center w-[30rem] md:w-[15rem]`,
   SectionThree: cntl`
   		bg-[#FDCB00]
 		px-12 py-4
 		rounded-full
-		mb-10`,
+		mb-10 md:scale-75`,
 };

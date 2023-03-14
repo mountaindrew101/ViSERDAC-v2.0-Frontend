@@ -1,4 +1,3 @@
-
 GENERAL TODO:
 [ ] HOMEPAGE => [ViSERDAC Statistics, Avail our services now, ViSERDAC Video]
 [ ] Error 404 Page
@@ -67,5 +66,21 @@ TODO:
     [ ] meetOurTeam.js
 [ ] fix services offered problem in JSON images
 
+[2022-11-25]
+Notes:
+Ideas:
+TODO:
+Ideas:
+    - services offered problem: worst case scenario is to hardcode the data and code split as well.
+TODO:
+[ ] About us components
+    [√] whatIsViserdac.js
+        [√] add framer motion
+    [√] missionVision.js
+    [√] otherSerdacs.js
+    [√] objectives.js
+    [ ] scopeOfReach.js
+    [ ] meetOurTeam.js
+[ ] fix services offered problem in JSON images
 
 #003D00

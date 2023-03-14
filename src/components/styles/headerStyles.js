@@ -26,12 +26,12 @@ export const headerSubContainerStyle = {
         h-24
         bg-white
         ml-[-6rem]`,
-  Breakpoints: cntl``,
+  Breakpoints: cntl`md:h-0 sm:h-0 md:flex-col md:items-start md:pr-0 md:pl-[0rem] md:pt-[5rem] lg:pl-[14rem]`,
 };
 
 export const yellowBarStyle = cntl`w-screen h-4 bg-[#FDCB00]`;
 
-export const gapControllerStyle = cntl`w-[10vw] shrink-0`;
+export const gapControllerStyle = cntl`w-[10vw] shrink-0 md:hidden lg:w-[3vw]`;
 
 export const headerLogoDesktopStyle = {
   Main: cntl`
@@ -48,7 +48,7 @@ export const headerLogoDesktopStyle = {
         hover:translate-y-1
         h-[5rem] w-[16rem]`,
   Breakpoints: cntl`
-        xl:scale-90`,
+        xl:scale-90 md:mt-[11rem] md:ml-10 sm:scale-75 sm:mt-[12rem]`,
 };
 
 export const backToTopParentContainerStyle = cntl`
@@ -56,7 +56,7 @@ export const backToTopParentContainerStyle = cntl`
         w-screen
         justify-end
         items-end pr-10
-        xs:pr-0`;
+        xs:pr-0;`
 
 export const backToTopContainerStyle = {
   Invisible: cntl`
@@ -76,10 +76,30 @@ export const backToTopTextStyles = {
   Invisible: cntl`
         rotate-90 -translate-x-4
         text-white opacity-0
-        transition duration-300 ease-in-out pointer-events-none`,
+        transition duration-300 ease-in-out pointer-events-none md:translate-x-5`,
   Visible: cntl`
         rotate-90 translate-y-12 -translate-x-4
         text-[#003D00]
         group-hover:translate-y-[-3rem] group-hover:opacity-0 group-hover:text-white
-        transition duration-300 ease-in-out pointer-events-none`,
+        transition duration-300 ease-in-out pointer-events-none md:translate-x-5`,
 };
+
+export const mobileMenu = cntl`
+    absolute
+    top-[2.75rem]
+    right-[2rem]
+    flex-col
+    space-y-1
+    w-[30px]
+    h-[25px]
+    hidden
+    z-50
+    
+    md:flex`;
+
+    export const mobileMenuBar = cntl`
+    h-[3px]
+    w-full
+    bg-[#710C10]
+    rounded-[10px]
+    z-50`;

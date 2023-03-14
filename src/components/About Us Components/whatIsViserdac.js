@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { WhatIsViserdacStyles } from "../styles/aboutUsComponentStyles";
+import { Link } from "gatsby";
 
 export const WhatIsViserdac = () => {
   return (
@@ -24,14 +25,18 @@ export const WhatIsViserdac = () => {
         >
           <span
             className={
-              "ml-[5rem]" + " " + WhatIsViserdacStyles.SectionOneWhatIsViserdac
+              "ml-[5rem] md:ml-[3rem]" +
+              " " +
+              WhatIsViserdacStyles.SectionOneWhatIsViserdac
             }
           >
             What is
           </span>
           <span className={WhatIsViserdacStyles.SectionOneWhatIsViserdac}>
             ViSERDAC{" "}
-            <span className="absolute text-[10rem] font-Metropolis">?</span>
+            <span className="absolute text-[10rem] font-Metropolis md:text-[8rem]">
+              ?
+            </span>
           </span>
         </motion.div>
         <div className="flex flex-col">
@@ -137,9 +142,12 @@ export const WhatIsViserdac = () => {
         that researchers can access for their R&D projects for free. The
         ViSERDAC team also provide trainings, seminars, consultancy services,
         and technical assistance to other R&D sectors.{" "}
-        <a className="text-[#003D00] hover:underline font-bold" href="/">
+        <Link
+          to="../../pages/servicesOffered.js"
+          className="text-[#003D00] hover:underline font-bold"
+        >
           Click here for more details.
-        </a>
+        </Link>
         <br />
         <br />
         ViSERDAC aims to serve as a repository of socio-economic and demographic

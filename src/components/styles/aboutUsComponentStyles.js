@@ -6,7 +6,10 @@ export const WhatIsViserdacStyles = {
     justify-center items-center
     container
     w-[60rem]
-    mt-[3rem]`,
+    mt-[3rem]
+    
+    md:flex-col md:mt-[0rem]
+    `,
 
   SectionOneWhatIsViserdacContainer: cntl`
     z-10
@@ -14,7 +17,8 @@ export const WhatIsViserdacStyles = {
     flex-col
     w-[50%]
     mx-[1rem]
-    `,
+    
+    md:items-center md:mb-5`,
 
   SectionOneWhatIsViserdac: cntl`
     font-poppins
@@ -24,22 +28,23 @@ export const WhatIsViserdacStyles = {
     drop-shadow-thicknear
     text-[5rem]
     whitespace-nowrap
-    `,
+
+    md:text-[3rem] md:leading-[3rem]`,
 
   SectionOneWeSpecializeContainer: cntl`
   bg-[#FFF]/75
     flex flex-col items-center
     rounded-[2rem]
     text-left container
-    py-2
-  `,
+    py-2 md:scale-90 md:w-[95vw] md:self-center`,
   SectionOneWeSpecialize: cntl`	
 		 font-Metropolis text-[#003D00]
      text-[1.8rem] leading-8
      text-center
      w-11/12
      drop-shadow-thicknear
-     `,
+
+     md:text-[1.2rem] md:leading-8 md:w-full xs:px-5`,
 
   SectionOneWeSpecializeSubtext: cntl`
     text-right
@@ -47,7 +52,7 @@ export const WhatIsViserdacStyles = {
     w-[85%] pr-8
     self-end
     text-[1.04rem]
-    `,
+    md:text-[0.8rem] md:w-[80vw]`,
 
   SectionTwoContainer: cntl`
     mt-5
@@ -60,6 +65,7 @@ export const WhatIsViserdacStyles = {
     bg-[#FFF]/75
     rounded-[2rem]
     
+    md:text-[1.2rem] md:w-[90vw]
     `,
   SectionTwo: cntl`
     px-8 py-5
@@ -73,7 +79,8 @@ export const WhatIsViserdacStyles = {
     mt-5
     text-justify
     tracking-wider
-    `,
+
+    md:w-[90vw] md:tracking-normal`,
 };
 
 export const MissionVisionStyles = {
@@ -86,7 +93,8 @@ export const MissionVisionStyles = {
     items-center
     pt-16
     drop-shadow-md
-    `,
+    
+    md:scale-[.60]`,
 
   VisionContainer: cntl`
     w-[30rem] h-auto
@@ -145,7 +153,9 @@ export const OtherSERDACsStyles = {
     flex
     flex-col
     justify-center
-    items-center`,
+    items-center md:scale-[.60]
+    md:translate-y-[-15rem]`,
+
   Title: cntl`
     bg-[#003D00]
     text-[#FDCB00]
@@ -153,8 +163,15 @@ export const OtherSERDACsStyles = {
     text-[2.5rem]
     rounded-full
     px-10
-     `,
-  Subcontainer: cntl`flex space-x-4 justify-center items-center`,
+    
+    md:text-center`,
+
+  Subcontainer: cntl`
+  flex space-x-4 justify-center items-center
+
+  md:flex-col md:space-y-[-0.5rem]
+  `,
+
   Map: cntl`
     bg-[#D1F1FF]
     rounded-[3rem]
@@ -162,6 +179,7 @@ export const OtherSERDACsStyles = {
     drop-shadow-thickmd
     scale-[.85]
     `,
+
   MapComponents: cntl`
     drop-shadow-thicknear
     fill-[#388E3C]
@@ -171,12 +189,14 @@ export const OtherSERDACsStyles = {
     ease-in-out
   `,
   MapComponentHover: cntl`fill-[#FDCB00]`,
+
   SERDACsContainer: cntl`
     flex flex-col
     space-y-5 my-10
     w-[30rem]
    
     `,
+
   SERDACsSubcontainer: cntl`
     flex
     space-x-5
@@ -188,8 +208,11 @@ export const OtherSERDACsStyles = {
     duration-200
     ease-in-out
 
+    group
+    hover:bg-[#003D00]
     hover:-translate-y-2
     `,
+
   SERDACsText: cntl`
     flex flex-col
     justify-center
@@ -199,15 +222,28 @@ export const OtherSERDACsStyles = {
     text-[1.2rem]
     font-bold
     `,
-  SERDACsLogo: cntl`w-[30%] flex justify-center`,
-  SERDACsTextTitle: cntl`text-white`,
-  SERDACsTextSubtitle: cntl`text-[#003D00] text-[1.8rem] leading-9`,
+
+  SERDACsLogo: cntl`
+    
+    flex 
+    justify-center`,
+
+  SERDACsTextTitle: cntl`
+    text-white`,
+  SERDACsTextSubtitle: cntl`
+    group-hover:text-[#FDCB00]
+    text-[#003D00] 
+    text-[1.8rem] 
+    leading-9`,
 };
 
 export const ObjectivesStyles = {
   ObjectivesContainer: cntl`
     bg-white-80%
-    rounded-[4rem]`,
+    rounded-[4rem]
+    
+    md:scale-[0.95] md:translate-y-[-24rem]
+    `,
   ObjectivesTextContainer: cntl`
     bg-[#FDCB00]    
     rounded-full
@@ -220,19 +256,55 @@ export const ObjectivesStyles = {
     leading-[3.5rem]
     text-[#003D00]
     drop-shadow-thicknear
-`,
+
+md:text-[2.5rem] md:leading-[2.5rem] md:pb-2`,
   ObjectivesListParent: cntl`
     pb-10 
     px-10 
-    pt-5`,
+    pt-5 
+    
+    md:text-xs md:px-2`,
   ObjectivesListContainer: cntl`
     flex
     items-center
-    font-medium py-[0.2em]`,
-  ObjectivesListIcon: cntl` w-7`,
+    font-medium py-[0.2em]
+    
+     md:py-0`,
+  ObjectivesListIcon: cntl` h-7 w-7 shrink-0 md:h-5 md:w-5`,
   ObjectivesListHighlight: cntl`
     pr-[0.3em]
     pl-[0.5em]
     text-[#003d00]`,
-  ObjectivesListText: cntl``,
+  ObjectivesListText: cntl`self-center`,
+};
+
+export const MeetOurTeamStyles = {
+  Container: cntl`md:translate-y-[-20rem]`,
+
+  TitleContainer: cntl`
+  font-poppins font-bold flex flex-col translate-x-[3rem] translate-y-[2rem] md:translate-y-[5rem]`,
+
+  TitlePt1: cntl`
+  text-[#003D00] text-[3rem] translate-x-[2rem] drop-shadow-thicknear`,
+
+  TitlePt2: cntl`
+  text-[#FDCB00] text-[5rem] translate-y-[-3rem] drop-shadow-thicknear`,
+
+  TitlePt3: cntl`
+  text-[#003D00] text-[10rem] absolute translate-x-[15rem] translate-y-[-2rem] drop-shadow-thicknear`,
+
+  MembersParent: cntl` grid grid-cols-2 gap-2 md:flex md:flex-col md:scale-[0.9]`,
+
+  MembersContainer: cntl`
+  bg-[#003D00] flex items-center space-x-4 px-7 py-6 rounded-2xl w-[25rem] drop-shadow-thicknear`,
+  MemberTextsContainer: cntl`font-Metropolis  text-end `,
+  MemberName: cntl`font-[1000] text-[1.5rem] text-[#DCE775]`,
+  MemberPosition: cntl`text-[#FFF] italic`,
+  MemberPhoto: cntl`rounded-full w-[10rem]`,
+};
+
+export const ScopeOfReachStyles = {
+  Container: cntl`flex flex-col justify-center items-center space-y-5 md:translate-y-[-20rem]`,
+  Title: cntl`bg-[#FDCB00] px-5 py-2 rounded-xl text-center w-[15em]`,
+  Scope: cntl`w-[40rem] md:w-[80vw]`,
 };

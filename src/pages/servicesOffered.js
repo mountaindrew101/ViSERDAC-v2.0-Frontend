@@ -2,150 +2,39 @@
 
 import React from "react";
 import { Layout } from "../components/layout";
-import { GatsbyImage } from "gatsby-plugin-image";
-import { motion } from "framer-motion";
-import { items } from "../components/Services Offered Components/servicesOfferedItems";
 
+// Styles
 import {
   ServicesOfferedContainer,
   ServicesOfferedItemsStyle,
 } from "../components/styles/servicesOfferedStyles";
 
+// Components
+import { EquipmentsFacilicitesSVCS } from "../components/Services Offered Components/equipmentsFacilities";
+import { DatabaseSVCS } from "../components/Services Offered Components/Database";
+import { MiniLibrarySVCS } from "../components/Services Offered Components/miniLibrary";
+import { TrainingsSVCS } from "../components/Services Offered Components/trainings";
+import { DataAnalysisSVCS } from "../components/Services Offered Components/dataAnalysis";
+import { ConsultationSVCS } from "../components/Services Offered Components/consultation";
+import { OnTheJobTrainingsSVCS } from "../components/Services Offered Components/onTheJobTrainings";
+import { SurveySVCS } from "../components/Services Offered Components/survey";
+import { ResearchSVCS } from "../components/Services Offered Components/research";
+
 const ServicesOffered = () => {
-  const ServicesOfferedItems = items;
-  const ServicesOfferedItemsAscending = []
-    .concat(ServicesOfferedItems)
-    .sort((a, b) => (a.Order_Number > b.Order_Number ? 1 : -1));
-  console.log(items.map((Item) => Item.Graphics));
+
 
   return (
     <Layout>
       <div className={ServicesOfferedContainer} id="ServicesOfferedContainer">
-        {/* Item Iteration */}
-        {ServicesOfferedItemsAscending.map((Item) => (
-          <motion.div
-            initial={{ x: "-50px", rotate: 1, opacity: 0 }}
-            whileInView={{ x: 0, rotate: 0, opacity: 1 }}
-            transition={{
-              duration: 0.2,
-              ease: "easeInOut",
-              type: "spring",
-              delay: 0.1,
-              stiffness: 100,
-            }}
-            className={
-              ServicesOfferedItemsStyle.ItemContainer +
-              " " +
-              ServicesOfferedItemsStyle.ItemContainerBreakpointStyles
-            }
-            id="ServicesOfferedItemContainer"
-            key={Item.Title}
-          >
-            <span
-              className={
-                ServicesOfferedItemsStyle.Title +
-                " " +
-                ServicesOfferedItemsStyle.TitleBreakpointStyles
-              }
-              id="Title"
-            >
-              {Item.Title}
-            </span>
-            <div
-              className={
-                ServicesOfferedItemsStyle.SectionOne +
-                " " +
-                ServicesOfferedItemsStyle.SectionOneBreakpointStyles
-              }
-              id="SectionOne"
-            >
-              <div
-                className={
-                  ServicesOfferedItemsStyle.PtOne +
-                  " " +
-                  ServicesOfferedItemsStyle.PtOneBreakpointStyles
-                }
-                id="PtOne"
-              >
-                <div
-                  className={
-                    ServicesOfferedItemsStyle.PtOne_Subtitle +
-                    " " +
-                    ServicesOfferedItemsStyle.PtOne_SubtitleBreakpointStyles
-                  }
-                  id="Subtitle"
-                >
-                  {Item.Subtitle}
-                </div>
-                <div
-                  id="Description"
-                  className={
-                    Item.Description === null
-                      ? "invisible"
-                      : ServicesOfferedItemsStyle.PtOne_Description
-                  }
-                >
-                  {Item.Description}
-                </div>
-                <a
-                  href={Item.Button_Link === null ? "" : Item.Button_Link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button
-                    className={
-                      Item.Button === false
-                        ? "invisible"
-                        : ServicesOfferedItemsStyle.PtOne_Button
-                    }
-                    id="Button"
-                  >
-                    <span>{Item.Button_Text}</span>
-                    <div
-                      id="Button Image Container"
-                      className="w-[10px] flex justify-center"
-                    >
-                      {Item.Button_Icon === null ? (
-                        <div></div>
-                      ) : (
-                        <GatsbyImage image={Item.Button_Icon} alt="" />
-                      )}
-                    </div>
-                  </button>
-                </a>
-              </div>
-              <div
-                id="PtTwoContainer"
-                className={ServicesOfferedItemsStyle.PtTwoContainer}
-              >
-                {Item.Graphics === "" ? (
-                  <span></span>
-                ) : (
-                  <GatsbyImage
-                    className={
-                      ServicesOfferedItemsStyle.PtTwo +
-                      " " +
-                      ServicesOfferedItemsStyle.PtTwoBreakpointStyles
-                    }
-                    image={Item.Graphics}
-                    alt=""
-                    id="Graphics"
-                  />
-                )}
-              </div>
-            </div>
-            <div
-              className={ServicesOfferedItemsStyle.SectionTwo}
-              id="SectionTwo"
-            >
-              {Item.Content_Image === null ? (
-                <span></span>
-              ) : (
-                <GatsbyImage image={Item.Content_Image} alt="" />
-              )}
-            </div>
-          </motion.div>
-        ))}
+          <EquipmentsFacilicitesSVCS />
+          <DatabaseSVCS />
+          <MiniLibrarySVCS />
+          <TrainingsSVCS />
+          <DataAnalysisSVCS />
+          <ConsultationSVCS />
+          <OnTheJobTrainingsSVCS />
+          <SurveySVCS />
+          <ResearchSVCS />
         <div
           id="SectionThree"
           className={ServicesOfferedItemsStyle.SectionThree}

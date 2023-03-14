@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import React from "react";
 import {

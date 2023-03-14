@@ -19,7 +19,7 @@ export const Footer = () => {
         " " +
         FooterStyles.MainContainerBreakpointStyles
       }
-    >
+    > 
       <div
         id="footerDividingLine"
         className={

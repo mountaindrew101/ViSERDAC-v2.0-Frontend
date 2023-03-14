@@ -13,11 +13,11 @@ export const FooterStyles = {
 
   SectionOneContainer: cntl`
         flex flex-row space-x-[5vw]`,
-  SectionOneContainerBreakpointStyles: cntl``,
+  SectionOneContainerBreakpointStyles: cntl`md:flex-col md:scale-90`,
 
   ContactDetailsContainer: cntl`
   		flex space-x-[5vw]`,
-  ContactDetailsContainerBreakpointStyles: cntl``,
+  ContactDetailsContainerBreakpointStyles: cntl`md:flex-col md:scale-75`,
 };
 
 export const FooterSectionOne = {
@@ -128,4 +128,4 @@ export const Copyright = cntl`
             flex justify-center
             mt-10 h-10
             bg-gradient-to-b from-white to-gray-300
-            w-screen text-xs`;
+            w-screen text-xs md:text-[0.7em]`;

@@ -40,7 +40,7 @@ const ProvideTechnicalAssistance = () => {
           We provide technical <br />
           to research sectors
         </h3>
-        <button
+        <a href="mailto:viserdac@vsu.edu.ph"
           className={
             ProvideTechnicalAssistanceStyles.Button +
             " " +
@@ -48,7 +48,7 @@ const ProvideTechnicalAssistance = () => {
           }
         >
           Talk with us
-        </button>
+        </a>
       </div>
     </motion.div>
   );

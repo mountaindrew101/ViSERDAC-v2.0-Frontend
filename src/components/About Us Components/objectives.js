@@ -25,7 +25,7 @@ export const Objectives = () => {
         className={ObjectivesStyles.ObjectivesTextContainer}
       >
         <div id="ObjectivesText" className={ObjectivesStyles.ObjectivesText}>
-          <span className="text-[3rem]">Our</span> <br />
+          <span className="text-[3rem] md:text-[2rem]">Our</span> <br />
           OBJECTIVES
         </div>
       </motion.div>

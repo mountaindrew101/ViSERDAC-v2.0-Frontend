@@ -21,18 +21,22 @@ export const hoverExpand = {
   },
 };
 
-export const navBarStyle = cntl`z-50`;
+export const navBarStyle = {
+Active: cntl`z-[49] md:w-full md:visible`,
+Inactive: cntl`md:invisible`,
+
+};
 
 export const navBarListStyle = cntl`
     flex
-    text-[0.95rem] space-x-4`;
+    text-[0.95rem] space-x-4 md:flex md:flex-col md:w-full md:space-x-0 md:translate-y-5`;
 
 export const navListItemStyle = cntl`
     group-hover:translate-y-[-0.15rem]
     transition duration-400 ease-in-out
     group-hover:text-green-nav
     flex
-    whitespace-nowrap`;
+    whitespace-nowrap md:w-[120%] md:bg-white md:p-5 md:group-hover:translate-y-0 md:justify-center`;
 
 export const ArrowNavStyle = cntl`
     transition duration-400 ease-in-out
@@ -40,6 +44,8 @@ export const ArrowNavStyle = cntl`
     mt-0.5
     group-hover:fill-[#388E3C]`;
 
-export const listItemGreenBarStyle = cntl`absolute top-[65%] h-[2px] rounded-xl bg-green-nav`;
+export const listItemGreenBarStyle = cntl`absolute top-[65%] h-[2px] rounded-xl bg-green-nav md:hidden`;
 
 export const groupController = cntl`group`;
+
+

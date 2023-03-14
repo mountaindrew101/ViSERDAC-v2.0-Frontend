@@ -12,11 +12,11 @@ export const OtherSERDACs = () => {
   const [VisayasHover, VisayasHovered] = useState(false);
   const [MindanaoHover, MindanaoHovered] = useState(false);
 
-  const LogoWidth = "100%";
+  const LogoWidth = 100;
   return (
     <div id="Container" className={OtherSERDACsStyles.Container}>
       <div id="Title" className={OtherSERDACsStyles.Title}>
-        Other <span className="text-[4rem]">SERDACs</span> in the Philippines
+        Other <span className="text-[4rem] md:text-[3rem]">SERDACs</span> in the Philippines
       </div>
       <div id="Subcontainer" className={OtherSERDACsStyles.Subcontainer}>
         <div id="Map" className={OtherSERDACsStyles.Map}>
@@ -76,6 +76,7 @@ export const OtherSERDACs = () => {
                 src="./assets/CLSU Logo-01.png"
                 alt=""
                 layout="constrained"
+                style={{ width: LogoWidth }}
               />
             </div>
             <div className={OtherSERDACsStyles.SERDACsText}>
@@ -101,7 +102,7 @@ export const OtherSERDACs = () => {
                 src="./assets/VSU Logo-01.png"
                 alt=""
                 layout="constrained"
-                imgStyle={LogoWidth}
+                style={{ width: LogoWidth }}
               />
             </div>
             <div className={OtherSERDACsStyles.SERDACsText}>
@@ -127,6 +128,7 @@ export const OtherSERDACs = () => {
                 src="./assets/USEP.png"
                 alt=""
                 layout="constrained"
+                style={{ width: LogoWidth }}
               />
             </div>
 
